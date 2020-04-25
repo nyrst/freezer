@@ -1,0 +1,24 @@
+name: "exa"
+latest_version: 0.9.0
+releases_feed: "https://github.com/ogham/exa/releases.atom"
+url: "https://github.com/ogham/exa"
+versions:
+  "0.9.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "exa-linux-x86_64"
+          target: "exa"
+      binary_type: "zip"
+      hash_sha1: "a9a384d8e462a78af6dd14ad80cebc67e674100f"
+      url: "https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "exa-macos-x86_64"
+          target: "exa"
+      binary_type: "zip"
+      hash_sha1: "9c21c7c4e4ba5dc8c29a5d883a80efebd17843dc"
+      url: "https://github.com/ogham/exa/releases/download/v0.9.0/exa-macos-x86_64-0.9.0.zip"
