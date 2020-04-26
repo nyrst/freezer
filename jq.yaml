@@ -1,0 +1,22 @@
+name: "jq"
+latest_version: 1.6
+releases_feed: "https://github.com/stedolan/jq/releases.atom"
+url: "https://github.com/stedolan/jq"
+versions:
+  "1.6":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "jq-linux64"
+          target: "jq"
+      binary_type: "binary"
+      url: "https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "jq-osx-amd64"
+          target: "jq"
+      binary_type: "binary"
+      url: "https://github.com/stedolan/jq/releases/download/jq-1.6/jq-osx-amd64"
