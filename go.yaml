@@ -1,0 +1,18 @@
+name: "go"
+latest_version: 1.14.2
+releases_feed: "https://blog.golang.org/feed.atom"
+url: "https://golang.org/"
+versions:
+  "1.14.2":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "go/bin/go"
+          target: "go"
+        - 
+          type: "symlink"
+          source: "go/bin/gofmt"
+          target: "gofmt"
+      binary_type: "tar"
+      url: "https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz"
