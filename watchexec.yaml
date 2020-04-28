@@ -1,0 +1,22 @@
+name: "watchexec"
+latest_version: 1.12.0
+releases_feed: "https://github.com/watchexec/watchexec/releases.atom"
+url: "https://github.com/watchexec/watchexec/"
+versions:
+  "1.12.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "watchexec-1.12.0-x86_64-unknown-linux-gnu/watchexec"
+          target: "watchexec"
+      binary_type: "tar"
+      url: "https://github.com/watchexec/watchexec/releases/download/1.12.0/watchexec-1.12.0-x86_64-unknown-linux-gnu.tar.xz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "watchexec-1.12.0-x86_64-apple-darwin/watchexec"
+          target: "watchexec"
+      binary_type: "tar"
+      url: "https://github.com/watchexec/watchexec/releases/download/1.12.0/watchexec-1.12.0-x86_64-apple-darwin.tar.xz"
