@@ -1,0 +1,22 @@
+name: "zoxide"
+latest_version: 0.4.0
+releases_feed: "https://github.com/ajeetdsouza/zoxide/releases.atom"
+url: "https://github.com/ajeetdsouza/zoxide"
+versions:
+  "0.4.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "zoxide-x86_64-unknown-linux-gnu"
+          target: "zoxide"
+      binary_type: "binary"
+      url: "https://github.com/ajeetdsouza/zoxide/releases/download/v0.4.0/zoxide-x86_64-unknown-linux-gnu"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "zoxide-x86_64-apple-darwin"
+          target: "zoxide"
+      binary_type: "binary"
+      url: "https://github.com/ajeetdsouza/zoxide/releases/download/v0.4.0/zoxide-x86_64-apple-darwin"
