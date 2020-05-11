@@ -1,0 +1,22 @@
+name: "brrr"
+latest_version: 0.34.5
+releases_feed: "https://github.com/nyrst/brrr/releases.atom"
+url: "https://github.com/nyrst/brrr"
+versions:
+  "0.34.5":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "brrr"
+          target: "brrr"
+      binary_type: "tar"
+      url: "https://github.com/nyrst/brrr/releases/download/v0.34.5/brrr-linux.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "brrr"
+          target: "brrr"
+      binary_type: "tar"
+      url: "https://github.com/nyrst/brrr/releases/download/v0.34.5/brrr-macos.tar.gz"
