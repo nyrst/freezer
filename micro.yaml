@@ -1,0 +1,23 @@
+brrr: "https://nyrst.github.io/freezer/micro.yaml"
+latest_version: 2.0.3
+name: "micro"
+releases_feed: "https://github.com/zyedidia/micro/releases.atom"
+url: "https://github.com/zyedidia/micro"
+versions:
+  "2.0.3":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "micro-2.0.3/micro"
+          target: "micro"
+      binary_type: "tar"
+      url: "https://github.com/zyedidia/micro/releases/download/v2.0.3/micro-2.0.3-linux64-static.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "micro-2.0.3/micro"
+          target: "micro"
+      binary_type: "tar"
+      url: "https://github.com/zyedidia/micro/releases/download/v2.0.3/micro-2.0.3-osx.tar.gz"
