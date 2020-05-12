@@ -1,6 +1,11 @@
-name: "go"
+brrr: "https://nyrst.github.io/freezer/go.yaml"
 latest_version: 1.14.2
+name: "go"
 releases_feed: "https://blog.golang.org/feed.atom"
+tags:
+  - programming-language
+  - language
+  - go
 url: "https://golang.org/"
 versions:
   "1.14.2":

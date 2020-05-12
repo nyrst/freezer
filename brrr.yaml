@@ -1,6 +1,13 @@
-name: "brrr"
+brrr: "https://nyrst.github.io/freezer/atom.yaml"
 latest_version: 0.34.5
+name: "brrr"
 releases_feed: "https://github.com/nyrst/brrr/releases.atom"
+tags:
+  - brrr
+  - package-manager
+  - command-line
+  - linux
+  - macos
 url: "https://github.com/nyrst/brrr"
 versions:
   "0.34.5":

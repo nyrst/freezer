@@ -1,6 +1,10 @@
-name: "firefox"
+brrr: "https://nyrst.github.io/freezer/firefox.yaml"
 latest_version: 76.0
+name: "firefox"
 releases_feed: "https://hg.mozilla.org/releases/mozilla-release/rss-tags"
+tags:
+  - browser
+  - web
 url: "https://www.mozilla.org/en-US/firefox/new/"
 versions:
   "76.0":

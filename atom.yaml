@@ -1,6 +1,15 @@
-name: "atom"
+brrr: "https://nyrst.github.io/freezer/atom.yaml"
 latest_version: 1.45.0
+name: "atom"
 releases_feed: "https://github.com/atom/atom/releases.atom"
+tags:
+  - atom
+  - editor
+  - javascript
+  - electron
+  # - windows
+  - linux
+  # - macos 
 url: "https://github.com/atom/atom/"
 versions:
   "1.45.0":

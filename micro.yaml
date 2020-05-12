@@ -2,7 +2,17 @@ brrr: "https://nyrst.github.io/freezer/micro.yaml"
 latest_version: 2.0.3
 name: "micro"
 releases_feed: "https://github.com/zyedidia/micro/releases.atom"
-url: "https://github.com/zyedidia/micro"
+repository: "https://github.com/zyedidia/micro"
+tags:
+  - micro
+  - text-editor
+  - editor
+  - command-line
+  - go
+  - golang
+  - cross-platform
+  - terminal 
+url: "https://nyrst.github.io/freezer/micro.yaml"
 versions:
   "2.0.3":
     linux:

@@ -1,6 +1,15 @@
-name: "broot"
+brrr: "https://nyrst.github.io/freezer/broot.yaml"
 latest_version: 0.13.6
+name: "broot"
 releases_feed: "https://github.com/Canop/broot/releases.atom"
+tags:
+  - rust
+  - linux
+  - command-line
+  - tree
+  - command-line-tool
+  - balanced-bfs-descent
+  - fuzzy-search
 url: "https://github.com/Canop/broot"
 versions:
   "0.13.6":

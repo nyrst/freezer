@@ -1,6 +1,13 @@
-name: "zoxide"
+brrr: "https://nyrst.github.io/freezer/zoxide.yaml"
 latest_version: 0.4.0
+name: "zoxide"
 releases_feed: "https://github.com/ajeetdsouza/zoxide/releases.atom"
+tags:
+  - z
+  - command-line
+  - filesystem
+  - rust
+  - zsh
 url: "https://github.com/ajeetdsouza/zoxide"
 versions:
   "0.4.0":

@@ -1,6 +1,9 @@
-name: "jq"
+brrr: "https://nyrst.github.io/freezer/jq.yaml"
 latest_version: 1.6
+name: "jq"
 releases_feed: "https://github.com/stedolan/jq/releases.atom"
+tags:
+  - command-line
 url: "https://github.com/stedolan/jq"
 versions:
   "1.6":
