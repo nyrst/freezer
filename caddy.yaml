@@ -1,0 +1,35 @@
+brrr: "https://nyrst.github.io/freezer/caddy.yaml"
+latest_version: 2.0.0
+name: "caddy"
+releases_feed: "https://github.com/caddyserver/caddy/releases.atom"
+tags:
+  - go
+  - web-server
+  - caddyfile
+  - http
+  - http-server
+  - reverse-proxy
+  - https
+  - tls
+  - automatic-https
+  - privacy
+  - security 
+url: "https://github.com/caddyserver/caddy"
+versions:
+  "2.0.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "caddy"
+          target: "caddy"
+      binary_type: "tar"
+      url: "https://github.com/caddyserver/caddy/releases/download/v2.0.0/caddy_2.0.0_linux_amd64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "caddy"
+          target: "caddy"
+      binary_type: "tar"
+      url: "https://github.com/caddyserver/caddy/releases/download/v2.0.0/caddy_2.0.0_mac_amd64.tar.gz"
