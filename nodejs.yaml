@@ -1,0 +1,33 @@
+brrr: "https://nyrst.github.io/freezer/nodejs.yaml"
+latest_version: 12.17.0
+name: "nodejs"
+releases_feed: "https://github.com/nodejs/node/releases.atom"
+tags:
+  - nodejs
+  - javascript
+  - node
+  - js
+  - runtime
+  - mit
+  - linux
+  # - macos
+  # - windows 
+url: "https://github.com/nodejs/node"
+versions:
+  "12.17.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "node-v12.17.0-linux-x64/bin/node"
+          target: "node"
+        - 
+          type: "symlink"
+          source: "node-v12.17.0-linux-x64/bin/npm"
+          target: "npm"
+        - 
+          type: "symlink"
+          source: "node-v12.17.0-linux-x64/bin/npx"
+          target: "npx"
+      binary_type: "tar"
+      url: "https://nodejs.org/dist/v12.17.0/node-v12.17.0-linux-x64.tar.xz"
