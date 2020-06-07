@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/firefox.yaml"
-latest_version: 76.0
+latest_version: 77.0
 name: "firefox"
 releases_feed: "https://hg.mozilla.org/releases/mozilla-release/rss-tags"
 tags:
@@ -7,6 +7,15 @@ tags:
   - web
 url: "https://www.mozilla.org/en-US/firefox/new/"
 versions:
+  "77.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "firefox/firefox"
+          target: "firefox"
+      binary_type: "tar"
+      url: "https://ftp.mozilla.org/pub/firefox/releases/77.0/linux-x86_64/en-US/firefox-77.0.tar.bz2"
   "76.0":
     linux:
       post_install:
