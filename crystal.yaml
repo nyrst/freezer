@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/crystal.yaml"
-latest_version: 0.34.0
+latest_version: 0.35.0
 name: "crystal"
 releases_feed: "https://github.com/crystal-lang/crystal/releases.atom"
 tags:
@@ -8,6 +8,31 @@ tags:
   - efficiency
 url: "https://github.com/crystal-lang/crystal"
 versions:
+  "0.35.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "crystal-0.35.0-1/bin/crystal"
+          target: "crystal"
+        - 
+          type: "symlink"
+          source: "crystal-0.35.0-1/bin/shards"
+          target: "shards"
+      binary_type: "tar"
+      url: "https://github.com/crystal-lang/crystal/releases/download/0.35.0/crystal-0.35.0-1-linux-x86_64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "crystal-0.35.0-1/bin/crystal"
+          target: "crystal"
+        - 
+          type: "symlink"
+          source: "crystal-0.35.0-1/embedded/bin/shards"
+          target: "shards"
+      binary_type: "tar"
+      url: "https://github.com/crystal-lang/crystal/releases/download/0.35.0/crystal-0.35.0-1-darwin-x86_64.tar.gz"
   "0.34.0":
     linux:
       post_install:
