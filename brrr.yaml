@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/brrr.yaml"
-latest_version: 0.377.34
+latest_version: 0.377.55
 name: "brrr"
 releases_feed: "https://github.com/nyrst/brrr/releases.atom"
 tags:
@@ -10,6 +10,23 @@ tags:
   - macos
 url: "https://github.com/nyrst/brrr"
 versions:
+  "0.377.55":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "brrr"
+          target: "brrr"
+      binary_type: "tar"
+      url: "https://github.com/nyrst/brrr/releases/download/v0.377.55/brrr-linux.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "brrr"
+          target: "brrr"
+      binary_type: "tar"
+      url: "https://github.com/nyrst/brrr/releases/download/v0.377.55/brrr-macos.tar.gz"
   "0.377.34":
     linux:
       post_install:
