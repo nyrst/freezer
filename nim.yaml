@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/nim.yaml"
-latest_version: 1.2.0
+latest_version: 1.2.2
 name: "nim"
 releases_feed: "https://github.com/nim-lang/Nim/releases.atom"
 tags:
@@ -13,6 +13,39 @@ tags:
   - python 
 url: "https://github.com/nim-lang/Nim"
 versions:
+  "1.2.2":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "nim-1.2.2/bin/nim"
+          target: "nim"
+        - 
+          type: "symlink"
+          source: "nim-1.2.2/bin/nimble"
+          target: "nimble"
+        - 
+          type: "symlink"
+          source: "nim-1.2.2/bin/nimfind"
+          target: "nimfind"
+        - 
+          type: "symlink"
+          source: "nim-1.2.2/bin/nimgrep"
+          target: "nimgrep"
+        - 
+          type: "symlink"
+          source: "nim-1.2.2/bin/nimpretty"
+          target: "nimpretty"
+        - 
+          type: "symlink"
+          source: "nim-1.2.2/bin/nimsuggest"
+          target: "nimsuggest"
+        - 
+          type: "symlink"
+          source: "nim-1.2.2/bin/testament"
+          target: "testament"
+      binary_type: "tar"
+      url: "https://nim-lang.org/download/nim-1.2.2-linux_x64.tar.xz"
   "1.2.0":
     linux:
       post_install:
