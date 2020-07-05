@@ -1,0 +1,33 @@
+brrr: "https://nyrst.github.io/freezer/neovim.yaml"
+latest_version: 0.4.3
+name: "neovim"
+releases_feed: "https://github.com/neovim/neovim/releases.atom"
+tags:
+  - neovim
+  - c
+  - vim
+  - lua
+  - nvim
+  - text-editor
+  - cross-platform
+  - extensible
+  - api 
+url: "https://github.com/neovim/neovim"
+versions:
+  "0.4.3":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "nvim-linux64/bin/nvim"
+          target: "nvim"
+      binary_type: "tar"
+      url: "https://github.com/neovim/neovim/releases/download/v0.4.3/nvim-linux64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "nvim-osx64/bin/nvim"
+          target: "nvim"
+      binary_type: "tar"
+      url: "https://github.com/neovim/neovim/releases/download/v0.4.3/nvim-macos.tar.gz"
