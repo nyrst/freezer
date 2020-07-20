@@ -1,0 +1,31 @@
+brrr: "https://nyrst.github.io/freezer/hugo.yaml"
+latest_version: 0.74.2
+name: "hugo"
+releases_feed: "https://github.com/gohugoio/hugo/releases.atom"
+tags:
+  - go
+  - hugo
+  - static-site-generator
+  - blog-engine
+  - cms
+  - content-management-system
+  - documentation-tool 
+url: "https://github.com/gohugoio/hugo"
+versions:
+  "0.74.2":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "hugo"
+          target: "hugo"
+      binary_type: "tar"
+      url: "https://github.com/gohugoio/hugo/releases/download/v0.74.2/hugo_extended_0.74.2_Linux-64bit.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "hugo"
+          target: "hugo"
+      binary_type: "tar"
+      url: "https://github.com/gohugoio/hugo/releases/download/v0.74.2/hugo_extended_0.74.2_macOS-64bit.tar.gz"
