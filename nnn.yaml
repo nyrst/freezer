@@ -1,0 +1,36 @@
+brrr: "https://nyrst.github.io/freezer/nnn.yaml"
+latest_version: 3.3
+name: "nnn"
+releases_feed: "https://github.com/jarun/nnn/releases.atom"
+tags:
+  - file-manager
+  - disk-usage
+  - launcher
+  - batch-renamer
+  - terminal
+  - command-line
+  - filesystem
+  - search
+  - vim
+  - wsl
+  - raspberry-pi
+  - productivity
+  - ncurses
+  - multi-platform
+  - suckless
+  - cli
+  - file-preview
+  - console
+  - android
+  - c 
+url: "https://github.com/jarun/nnn"
+versions:
+  "3.3":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "usr/bin/nnn"
+          target: "nnn"
+      binary_type: "tar"
+      url: "https://github.com/jarun/nnn/releases/download/v3.3/nnn-3.3-1-x86_64.pkg.tar.xz"
