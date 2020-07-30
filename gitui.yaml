@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/gitui.yaml"
-latest_version: 0.8.1
+latest_version: 0.9.1
 name: "gitui"
 releases_feed: "https://github.com/extrawurst/gitui/releases.atom"
 tags:
@@ -11,6 +11,40 @@ tags:
   - command-line-interface
 url: "https://github.com/extrawurst/gitui"
 versions:
+  "0.9.1":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "gitui"
+          target: "gitui"
+      binary_type: "tar"
+      url: "https://github.com/extrawurst/gitui/releases/download/v0.9.1/gitui-linux-musl.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "gitui"
+          target: "gitui"
+      binary_type: "tar"
+      url: "https://github.com/extrawurst/gitui/releases/download/v0.9.1/gitui-mac.tar.gz"
+  "0.9.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "gitui"
+          target: "gitui"
+      binary_type: "tar"
+      url: "https://github.com/extrawurst/gitui/releases/download/v0.9.0/gitui-linux-musl.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "gitui"
+          target: "gitui"
+      binary_type: "tar"
+      url: "https://github.com/extrawurst/gitui/releases/download/v0.9.0/gitui-mac.tar.gz"
   "0.8.1":
     linux:
       post_install:
