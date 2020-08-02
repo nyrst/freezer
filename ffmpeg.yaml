@@ -1,0 +1,22 @@
+brrr: "https://nyrst.github.io/freezer/ffmpeg.yaml"
+latest_version: 4.3.1
+name: "ffmpeg"
+releases_feed: "https://git.ffmpeg.org/gitweb/ffmpeg.git/rss?opt=--no-merges"
+tags:
+  - video
+url: "https://github.com/ogham/exa"
+versions:
+  "4.3.1":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "ffmpeg-4.3.1-amd64-static/ffmpeg"
+          target: "ffmpeg"
+        - 
+          type: "symlink"
+          source: "ffmpeg-4.3.1-amd64-static/ffprobe"
+          target: "ffprobe"
+      binary_type: "tar"
+      hash_md5: "ee235393ec7778279144ee6cbdd9eb64"
+      url: "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz"
