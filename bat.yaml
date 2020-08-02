@@ -1,0 +1,31 @@
+brrr: "https://nyrst.github.io/freezer/bat.yaml"
+latest_version: 0.15.4
+name: "bat"
+releases_feed: "https://github.com/sharkdp/bat/releases.atom"
+tags:
+  - command-line
+  - tool
+  - syntax-highlighting
+  - git
+  - terminal
+  - cli
+  - rust 
+url: "https://github.com/sharkdp/bat"
+versions:
+  "0.15.4":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "bat-v0.15.4-x86_64-unknown-linux-gnu/bat"
+          target: "bat"
+      binary_type: "tar"
+      url: "https://github.com/sharkdp/bat/releases/download/v0.15.4/bat-v0.15.4-x86_64-unknown-linux-gnu.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "bat-v0.15.4-x86_64-apple-darwin/bat"
+          target: "bat"
+      binary_type: "zip"
+      url: "https://github.com/sharkdp/bat/releases/download/v0.15.4/bat-v0.15.4-x86_64-apple-darwin.tar.gz"
