@@ -21,6 +21,18 @@ versions:
           target: "gofmt"
       binary_type: "tar"
       url: "https://golang.org/dl/go1.15.linux-amd64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "go/bin/go"
+          target: "go"
+        - 
+          type: "symlink"
+          source: "go/bin/gofmt"
+          target: "gofmt"
+      binary_type: "tar"
+      url: "https://golang.org/dl/go1.15.darwin-amd64.tar.gz"
   "1.14.2":
     linux:
       post_install:
