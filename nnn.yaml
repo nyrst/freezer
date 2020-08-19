@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/nnn.yaml"
-latest_version: 3.3
+latest_version: 3.4
 name: "nnn"
 releases_feed: "https://github.com/jarun/nnn/releases.atom"
 tags:
@@ -25,6 +25,15 @@ tags:
   - c 
 url: "https://github.com/jarun/nnn"
 versions:
+  "3.4":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "nnn-static"
+          target: "nnn"
+      binary_type: "tar"
+      url: "https://github.com/jarun/nnn/releases/download/v3.4/nnn-static-3.4.x86_64.tar.gz"
   "3.3":
     linux:
       post_install:
