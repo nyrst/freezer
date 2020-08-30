@@ -1,0 +1,20 @@
+brrr: "https://nyrst.github.io/freezer/bandwhich.yaml"
+latest_version: 0.16.0
+name: "bandwhich"
+releases_feed: "https://github.com/imsnif/bandwhich/releases.atom"
+tags:
+  - cli
+  - networking
+  - bandwidth
+  - dashboard 
+url: "https://github.com/imsnif/bandwhich"
+versions:
+  "0.16.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "bandwhich"
+          target: "bandwhich"
+      binary_type: "tar"
+      url: "https://github.com/imsnif/bandwhich/releases/download/0.16.0/bandwhich-v0.16.0-x86_64-unknown-linux-musl.tar.gz"
