@@ -57,17 +57,25 @@ A Binary has the following properties:
 
 A PostInstall has the following properties:
 
-- `type` (`String`, mandatory): the type of the post install thing to run. Supported values: `symlink` and `move`.
+- `type` (`String`, mandatory): the type of the post install thing to run. Supported values: `echo`, `move`, `run`, `symlink`.
 
-For the `symlink` type, use the following extra properties:
+For the `echo` type, use the following property:
 
-- `source`: the path to the executable.
-- `target`: the name of the symlink (see the exa example).
+- `message`: the message to display.
 
-For the `move` type, use the following extra properties:
+For the `move` type, use the following properties:
 
 - `source`: the path to the binary/folder to move.
 - `target`: the target folder to move the source into.
+
+For the `run` type, use the following property:
+
+- `command`: the command to execute. If an error occurs, it will be logged. Otherwise, the command output will be logged.
+
+For the `symlink` type, use the following properties:
+
+- `source`: the path to the executable.
+- `target`: the name of the symlink (see the exa example).
 
 ## Development
 
