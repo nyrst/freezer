@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/broot.yaml"
-latest_version: 0.20.3
+latest_version: 1.0.0
 name: "broot"
 releases_feed: "https://github.com/Canop/broot/releases.atom"
 tags:
@@ -12,6 +12,18 @@ tags:
   - fuzzy-search
 url: "https://github.com/Canop/broot"
 versions:
+  "1.0.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "build/x86_64-linux/broot"
+          target: "broot"
+        -
+          type: "run"
+          command: "broot --install"
+      binary_type: "zip"
+      url: "https://github.com/Canop/broot/releases/download/v1.0.0/broot_1.0.0.zip"
   "0.20.3":
     linux:
       post_install:
