@@ -1,6 +1,6 @@
 # freezer
 
-This is the repository to use with [`brrr`](https://github.com/SiegfriedEhret/brrr).
+Freezer is the repository of package definitions to use with [`brrr`](https://github.com/SiegfriedEhret/brrr).
 
 ## Package definition
 
@@ -76,21 +76,3 @@ For the `symlink` type, use the following properties:
 
 - `source`: the path to the executable.
 - `target`: the name of the symlink (see the exa example).
-
-## Development
-
-### Contributing
-
-1. Fork it (<https://github.com/SiegfriedEhret/freezer/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-### Contributors
-
-- [Siegfried Ehret](https://github.com/SiegfriedEhret) - creator and maintainer
-
-### License
-
-This library is distributed under the MIT license. Please see the [LICENSE](./LICENSE) file.
