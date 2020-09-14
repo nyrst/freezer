@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/mint.yaml"
-latest_version: 0.9.0
+latest_version: 0.10.0
 name: "mint"
 releases_feed: "https://github.com/mint-lang/mint/releases.atom"
 tags:
@@ -10,6 +10,15 @@ tags:
   - compile-to-js 
 url: "https://github.com/mint-lang/mint/"
 versions:
+  "0.10.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "mint-0.10.0-linux"
+          target: "mint"
+      binary_type: "binary"
+      url: "https://github.com/mint-lang/mint/releases/download/0.10.0/mint-0.10.0-linux"
   "0.9.0":
     linux:
       post_install:
