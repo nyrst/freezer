@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/nodejs.yaml"
-latest_version: 14.10.1
+latest_version: 14.11.0
 name: "nodejs"
 releases_feed: "https://github.com/nodejs/node/releases.atom"
 tags:
@@ -14,6 +14,23 @@ tags:
   # - windows 
 url: "https://github.com/nodejs/node"
 versions:
+  "14.11.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "node-v14.11.0-linux-x64/bin/node"
+          target: "node"
+        - 
+          type: "symlink"
+          source: "node-v14.11.0-linux-x64/bin/npm"
+          target: "npm"
+        - 
+          type: "symlink"
+          source: "node-v14.11.0-linux-x64/bin/npx"
+          target: "npx"
+      binary_type: "tar"
+      url: "https://nodejs.org/dist/v14.11.0/node-v14.11.0-linux-x64.tar.xz"
   "14.10.1":
     linux:
       post_install:
@@ -150,6 +167,23 @@ versions:
           target: "npx"
       binary_type: "tar"
       url: "https://nodejs.org/dist/v14.4.0/node-v14.4.0-linux-x64.tar.xz"
+  "12.18.4":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "node-v12.18.4-linux-x64/bin/node"
+          target: "node"
+        - 
+          type: "symlink"
+          source: "node-v12.18.4-linux-x64/bin/npm"
+          target: "npm"
+        - 
+          type: "symlink"
+          source: "node-v12.18.4-linux-x64/bin/npx"
+          target: "npx"
+      binary_type: "tar"
+      url: "https://nodejs.org/dist/v12.18.4/node-v12.18.4-linux-x64.tar.xz"
   "12.18.3":
     linux:
       post_install:
