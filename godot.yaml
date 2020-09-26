@@ -1,0 +1,23 @@
+brrr: "https://nyrst.github.io/freezer/godot.yaml"
+latest_version: 3.2.3
+name: "godot"
+releases_feed: "https://github.com/godotengine/godot/releases.atom"
+tags:
+  - game-engine
+  - godot
+  - godotengine
+  - open-source
+  - multi-platform
+  - gamedev
+  - game-development 
+url: "https://github.com/godotengine/godot"
+versions:
+  "3.2.3":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "Godot_v3.2.3-stable_x11.64"
+          target: "godot"
+      binary_type: "zip"
+      url: "https://downloads.tuxfamily.org/godotengine/3.2.3/Godot_v3.2.3-stable_x11.64.zip"
