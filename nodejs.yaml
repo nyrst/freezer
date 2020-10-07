@@ -201,6 +201,23 @@ versions:
           target: "npx"
       binary_type: "tar"
       url: "https://nodejs.org/dist/v14.4.0/node-v14.4.0-linux-x64.tar.xz"
+  "12.19.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "node-v12.19.0-linux-x64/bin/node"
+          target: "node"
+        - 
+          type: "symlink"
+          source: "node-v12.19.0-linux-x64/bin/npm"
+          target: "npm"
+        - 
+          type: "symlink"
+          source: "node-v12.19.0-linux-x64/bin/npx"
+          target: "npx"
+      binary_type: "tar"
+      url: "https://nodejs.org/dist/v12.19.0/node-v12.19.0-linux-x64.tar.xz"
   "12.18.4":
     linux:
       post_install:
