@@ -1,0 +1,42 @@
+brrr: "https://nyrst.github.io/freezer/up.yaml"
+latest_version: 1.7.0
+name: "up"
+releases_feed: "https://github.com/apex/up/releases.atom"
+tags:
+  - deployment
+  - aws
+  - lambda
+  - serverless
+  - api
+  - static
+  - deploy-tool
+  - golang
+  - nodejs
+  - aws-lambda
+  - aws-infrastructure
+  - api-gateway
+  - microservice
+  - microservices
+  - graphql
+  - http
+  - heroku
+  - up 
+url: "https://github.com/apex/up"
+versions:
+  "1.7.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "up"
+          target: "up"
+      binary_type: "tar"
+      url: "https://github.com/apex/up/releases/download/v1.7.0/up_1.7.0_linux_amd64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "exa-macos-x86_64"
+          target: "exa"
+      binary_type: "tar"
+      url: "https://github.com/apex/up/releases/download/v1.7.0/up_1.7.0_darwin_amd64.tar.gz"
