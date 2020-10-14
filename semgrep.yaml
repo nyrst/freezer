@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/semgrep.yaml"
-latest_version: 0.17.0
+latest_version: 0.27.0
 name: "semgrep"
 releases_feed: "https://github.com/returntocorp/semgrep/releases.atom"
 tags:
@@ -13,6 +13,23 @@ tags:
   - sast 
 url: "https://github.com/returntocorp/semgrep"
 versions:
+  "0.27.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "semgrep-files/semgrep-core"
+          target: "semgrep-core"
+      binary_type: "tar"
+      url: "https://github.com/returntocorp/semgrep/releases/download/v0.27.0/semgrep-v0.27.0-ubuntu-16.04.tgz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "artifacts/semgrep-core"
+          target: "semgrep-core"
+      binary_type: "zip"
+      url: "https://github.com/returntocorp/semgrep/releases/download/v0.27.0/semgrep-v0.27.0-osx.zip"
   "0.17.0":
     linux:
       post_install:
