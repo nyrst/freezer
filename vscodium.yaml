@@ -1,11 +1,29 @@
 brrr: "https://nyrst.github.io/freezer/vscodium.yaml"
-latest_version: 1.49.2
+latest_version: 1.50.0
 name: "vscodium"
 releases_feed: "https://github.com/VSCodium/vscodium/releases.atom"
 tags:
   - 
 url: "https://github.com/VSCodium/vscodium"
 versions:
+  "1.50.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "bin/codium"
+          target: "codium"
+      binary_type: "tar"
+      url: "https://github.com/VSCodium/vscodium/releases/download/1.50.0/VSCodium-linux-x64-1.50.0.tar.gz"
+  "1.49.3":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "bin/codium"
+          target: "codium"
+      binary_type: "tar"
+      url: "https://github.com/VSCodium/vscodium/releases/download/1.49.3/VSCodium-linux-x64-1.49.3.tar.gz"
   "1.49.2":
     linux:
       post_install:
