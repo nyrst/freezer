@@ -13,5 +13,4 @@ versions:
           source: "youtube-dl"
           target: "youtube-dl"
       binary_type: "binary"
-      hash_sha1: "8ce684181412918a6c4de03e0b63111df4ec064b"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.09.20/youtube-dl"
+      url: "https://yt-dl.org/downloads/latest/youtube-dl"
