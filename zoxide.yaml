@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/zoxide.yaml"
-latest_version: 0.4.3
+latest_version: 0.5.0
 name: "zoxide"
 releases_feed: "https://github.com/ajeetdsouza/zoxide/releases.atom"
 tags:
@@ -10,6 +10,23 @@ tags:
   - zsh
 url: "https://github.com/ajeetdsouza/zoxide"
 versions:
+  "0.5.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "zoxide-x86_64-unknown-linux-gnu"
+          target: "zoxide"
+      binary_type: "binary"
+      url: "https://github.com/ajeetdsouza/zoxide/releases/download/v0.5.0/zoxide-x86_64-unknown-linux-gnu"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "zoxide-x86_64-apple-darwin"
+          target: "zoxide"
+      binary_type: "binary"
+      url: "https://github.com/ajeetdsouza/zoxide/releases/download/v0.5.0/zoxide-x86_64-apple-darwin"
   "0.4.3":
     linux:
       post_install:
