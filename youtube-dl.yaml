@@ -1,11 +1,11 @@
 brrr: "https://nyrst.github.io/freezer/youtube-dl.yaml"
-latest_version: 2020.09.20
+latest_version: 2020.11.01.1
 name: "youtube-dl"
 releases_feed: "https://github.com/ytdl-org/youtube-dl/releases.atom"
 tags: []
 url: "https://github.com/ytdl-org/youtube-dl"
 versions:
-  "2020.09.20":
+  "2020.11.01.1":
     linux:
       post_install:
         - 
