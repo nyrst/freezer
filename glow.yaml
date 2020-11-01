@@ -1,0 +1,27 @@
+brrr: "https://nyrst.github.io/freezer/glow.yaml"
+latest_version: 1.1.0
+name: "glow"
+releases_feed: "https://github.com/charmbracelet/glow/releases.atom"
+tags:
+  - markdown
+  - cli
+  - excitement
+url: "https://github.com/charmbracelet/glow"
+versions:
+  "1.1.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "glow"
+          target: "glow"
+      binary_type: "tar"
+      url: "https://github.com/charmbracelet/glow/releases/download/v1.1.0/glow_1.1.0_linux_x86_64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "glow"
+          target: "glow"
+      binary_type: "tar"
+      url: "https://github.com/charmbracelet/glow/releases/download/v1.1.0/glow_1.1.0_Darwin_x86_64.tar.gz"
