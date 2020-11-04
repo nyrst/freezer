@@ -1,0 +1,33 @@
+brrr: "https://nyrst.github.io/freezer/ripgrep.yaml"
+latest_version: 12.1.1
+name: "ripgrep"
+releases_feed: "https://github.com/BurntSushi/ripgrep/releases.atom"
+tags:
+  - ripgrep
+  - recursively-search
+  - search
+  - regex
+  - gitignore
+  - grep
+  - command-line-tool
+  - command-line
+  - cli 
+url: "https://github.com/BurntSushi/ripgrep"
+versions:
+  "12.1.1":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "ripgrep-12.1.1-x86_64-unknown-linux-musl/rg"
+          target: "rg"
+      binary_type: "tar"
+      url: "https://github.com/BurntSushi/ripgrep/releases/download/12.1.1/ripgrep-12.1.1-x86_64-unknown-linux-musl.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "ripgrep-12.1.1-x86_64-apple-darwin/rg"
+          target: "rg"
+      binary_type: "tar"
+      url: "https://github.com/BurntSushi/ripgrep/releases/download/12.1.1/ripgrep-12.1.1-x86_64-apple-darwin.tar.gz"
