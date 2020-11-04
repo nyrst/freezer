@@ -27,7 +27,7 @@ versions:
           type: "symlink"
           source: "bat-v0.16.0-x86_64-apple-darwin/bat"
           target: "bat"
-      binary_type: "zip"
+      binary_type: "tar"
       url: "https://github.com/sharkdp/bat/releases/download/v0.16.0/bat-v0.16.0-x86_64-apple-darwin.tar.gz"
   "0.15.4":
     linux:
@@ -44,5 +44,5 @@ versions:
           type: "symlink"
           source: "bat-v0.15.4-x86_64-apple-darwin/bat"
           target: "bat"
-      binary_type: "zip"
+      binary_type: "tar"
       url: "https://github.com/sharkdp/bat/releases/download/v0.15.4/bat-v0.15.4-x86_64-apple-darwin.tar.gz"
