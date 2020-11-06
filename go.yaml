@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/go.yaml"
-latest_version: 1.15.3
+latest_version: 1.15.4
 name: "go"
 releases_feed: "https://blog.golang.org/feed.atom"
 tags:
@@ -8,6 +8,31 @@ tags:
   - go
 url: "https://golang.org/"
 versions:
+  "1.15.4":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "go/bin/go"
+          target: "go"
+        - 
+          type: "symlink"
+          source: "go/bin/gofmt"
+          target: "gofmt"
+      binary_type: "tar"
+      url: "https://golang.org/dl/go1.15.4.linux-amd64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "go/bin/go"
+          target: "go"
+        - 
+          type: "symlink"
+          source: "go/bin/gofmt"
+          target: "gofmt"
+      binary_type: "tar"
+      url: "https://golang.org/dl/go1.15.4.darwin-amd64.tar.gz"
   "1.15.3":
     linux:
       post_install:
@@ -32,7 +57,7 @@ versions:
           source: "go/bin/gofmt"
           target: "gofmt"
       binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.darwin-amd64.tar.gz"
+      url: "https://golang.org/dl/go1.15.3.darwin-amd64.tar.gz"
   "1.15.0":
     linux:
       post_install:
@@ -58,6 +83,31 @@ versions:
           target: "gofmt"
       binary_type: "tar"
       url: "https://golang.org/dl/go1.15.darwin-amd64.tar.gz"
+  "1.14.11":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "go/bin/go"
+          target: "go"
+        - 
+          type: "symlink"
+          source: "go/bin/gofmt"
+          target: "gofmt"
+      binary_type: "tar"
+      url: "https://dl.google.com/go/go1.14.11.linux-amd64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "go/bin/go"
+          target: "go"
+        - 
+          type: "symlink"
+          source: "go/bin/gofmt"
+          target: "gofmt"
+      binary_type: "tar"
+      url: "https://golang.org/dl/go1.14.11.darwin-amd64.tar.gz"
   "1.14.2":
     linux:
       post_install:
