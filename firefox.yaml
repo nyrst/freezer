@@ -1,12 +1,40 @@
 brrr: "https://nyrst.github.io/freezer/firefox.yaml"
-latest_version: 81.0
+latest_version: 82.0.2
 name: "firefox"
 releases_feed: "https://hg.mozilla.org/releases/mozilla-release/rss-tags"
 tags:
   - browser
   - web
 url: "https://www.mozilla.org/en-US/firefox/new/"
+# downloads: https://ftp.mozilla.org/pub/firefox/releases/
 versions:
+  "82.0.2":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "firefox/firefox"
+          target: "firefox"
+      binary_type: "tar"
+      url: "https://ftp.mozilla.org/pub/firefox/releases/82.0.2/linux-x86_64/en-US/firefox-82.0.2.tar.bz2"
+  "82.0.1":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "firefox/firefox"
+          target: "firefox"
+      binary_type: "tar"
+      url: "https://ftp.mozilla.org/pub/firefox/releases/82.0.1/linux-x86_64/en-US/firefox-82.0.1.tar.bz2"
+  "82.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "firefox/firefox"
+          target: "firefox"
+      binary_type: "tar"
+      url: "https://ftp.mozilla.org/pub/firefox/releases/82.0/linux-x86_64/en-US/firefox-82.0.tar.bz2"
   "81.0":
     linux:
       post_install:
