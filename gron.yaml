@@ -1,0 +1,25 @@
+brrr: "https://nyrst.github.io/freezer/gron.yaml"
+latest_version: 0.6.0
+name: "gron"
+releases_feed: "https://github.com/tomnomnom/gron/releases.atom"
+tags:
+  - command-line
+url: "https://github.com/tomnomnom/gron"
+versions:
+  "0.6.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "gron"
+          target: "gron"
+      binary_type: "tar"
+      url: "https://github.com/tomnomnom/gron/releases/download/v0.6.0/gron-linux-amd64-0.6.0.tgz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "gron"
+          target: "gron"
+      binary_type: "tar"
+      url: "https://github.com/tomnomnom/gron/releases/download/v0.6.0/gron-darwin-amd64-0.6.0.tgz"
