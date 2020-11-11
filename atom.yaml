@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/atom.yaml"
-latest_version: 1.52.0
+latest_version: 1.53.0
 name: "atom"
 releases_feed: "https://github.com/atom/atom/releases.atom"
 tags:
@@ -12,6 +12,15 @@ tags:
   # - macos 
 url: "https://github.com/atom/atom/"
 versions:
+  "1.53.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "atom-1.53.0-amd64/atom"
+          target: "atom"
+      binary_type: "tar"
+      url: "https://github.com/atom/atom/releases/download/v1.53.0/atom-amd64.tar.gz"
   "1.52.0":
     linux:
       post_install:
