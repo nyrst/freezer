@@ -14,3 +14,11 @@ versions:
           target: "youtube-dl"
       binary_type: "binary"
       url: "https://yt-dl.org/downloads/latest/youtube-dl"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "youtube-dl"
+          target: "youtube-dl"
+      binary_type: "binary"
+      url: "https://yt-dl.org/downloads/latest/youtube-dl"
