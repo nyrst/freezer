@@ -71,6 +71,7 @@ For the `move` type, use the following properties:
 For the `run` type, use the following property:
 
 - `command`: the command to execute. If an error occurs, it will be logged. Otherwise, the command output will be logged.
+- `working_directory`: the command to run, relative to the current package directory (:warning: use with caution, there are no checks on where things are executed!)
 
 For the `symlink` type, use the following properties:
 
