@@ -34,6 +34,18 @@ versions:
           target: "nnn"
       binary_type: "tar"
       url: "https://github.com/jarun/nnn/releases/download/v3.5/nnn-icons-static-3.5.x86_64.tar.gz"
+    macos:
+      post_install:
+        -
+          type: "run"
+          command: "make O_ICONS=1"
+          working_directory: "nnn-3.5"
+        - 
+          type: "symlink"
+          source: "nnn-3.5/nnn"
+          target: "nnn"
+      binary_type: "tar"
+      url: "https://github.com/jarun/nnn/releases/download/v3.5/nnn-v3.5.tar.gz"
   "3.4":
     linux:
       post_install:
