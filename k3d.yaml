@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/k3d.yaml"
-latest_version: 3.2.1
+latest_version: 3.3.0
 name: "k3d"
 releases_feed: "https://github.com/rancher/k3d/releases.atom"
 tags:
@@ -12,6 +12,23 @@ tags:
   - cluster 
 url: "https://github.com/rancher/k3d"
 versions:
+  "3.3.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "k3d-linux-amd64"
+          target: "k3d"
+      binary_type: "binary"
+      url: "https://github.com/rancher/k3d/releases/download/v3.3.0/k3d-linux-amd64"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "k3d-darwin-amd64"
+          target: "k3d"
+      binary_type: "binary"
+      url: "https://github.com/rancher/k3d/releases/download/v3.3.0/k3d-darwin-amd64"
   "3.2.1":
     linux:
       post_install:
