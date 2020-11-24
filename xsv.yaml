@@ -1,0 +1,28 @@
+brrr: "https://nyrst.github.io/freezer/xsv.yaml"
+latest_version: 0.13.0
+name: "xsv"
+releases_feed: "https://github.com/BurntSushi/xsv/releases.atom"
+tags:
+  - csv
+  - cli
+  - command-line
+  - rust
+url: "https://github.com/BurntSushi/xsv"
+versions:
+  "0.13.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "xsv"
+          target: "xsv"
+      binary_type: "tar"
+      url: "https://github.com/BurntSushi/xsv/releases/download/0.13.0/xsv-0.13.0-x86_64-unknown-linux-musl.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "xsv"
+          target: "xsv"
+      binary_type: "tar"
+      url: "https://github.com/BurntSushi/xsv/releases/download/0.13.0/xsv-0.13.0-x86_64-apple-darwin.tar.gz"
