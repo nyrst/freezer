@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/hugo.yaml"
-latest_version: 0.78.2
+latest_version: 0.79.0
 name: "hugo"
 releases_feed: "https://github.com/gohugoio/hugo/releases.atom"
 tags:
@@ -12,6 +12,23 @@ tags:
   - documentation-tool 
 url: "https://github.com/gohugoio/hugo"
 versions:
+  "0.79.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "hugo"
+          target: "hugo"
+      binary_type: "tar"
+      url: "https://github.com/gohugoio/hugo/releases/download/v0.79.0/hugo_extended_0.79.0_Linux-64bit.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "hugo"
+          target: "hugo"
+      binary_type: "tar"
+      url: "https://github.com/gohugoio/hugo/releases/download/v0.79.0/hugo_extended_0.79.0_macOS-64bit.tar.gz"
   "0.78.2":
     linux:
       post_install:
