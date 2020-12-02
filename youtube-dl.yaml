@@ -1,10 +1,27 @@
 brrr: "https://nyrst.github.io/freezer/youtube-dl.yaml"
-latest_version: 2020.11.29
+latest_version: 2020.12.02
 name: "youtube-dl"
 releases_feed: "https://github.com/ytdl-org/youtube-dl/releases.atom"
 tags: []
 url: "https://github.com/ytdl-org/youtube-dl"
 versions:
+  "2020.12.02":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "youtube-dl"
+          target: "youtube-dl"
+      binary_type: "binary"
+      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.02/youtube-dl"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "youtube-dl"
+          target: "youtube-dl"
+      binary_type: "binary"
+      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.02/youtube-dl"
   "2020.11.29":
     linux:
       post_install:
