@@ -1,0 +1,43 @@
+brrr: "https://nyrst.github.io/freezer/dasel.yaml"
+latest_version: 1.8.0
+name: "dasel"
+releases_feed: "https://github.com/TomWright/dasel/releases.atom"
+tags:
+  - json
+  - yaml
+  - configuration
+  - selector
+  - data-structures
+  - config
+  - parser
+  - yaml-processor
+  - json-processing
+  - portable
+  - devops-tools
+  - golang
+  - cli
+  - toml
+  - query
+  - update
+  - xml
+  - xml-parser
+  - go 
+url: "https://github.com/TomWright/dasel"
+versions:
+  "1.8.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "dasel_linux_amd64"
+          target: "dasel"
+      binary_type: "binary"
+      url: "https://github.com/TomWright/dasel/releases/download/v1.8.0/dasel_linux_amd64"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "dasel_macos_amd64"
+          target: "dasel"
+      binary_type: "binary"
+      url: "https://github.com/TomWright/dasel/releases/download/v1.8.0/dasel_macos_amd64"
