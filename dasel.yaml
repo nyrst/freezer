@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/dasel.yaml"
-latest_version: 1.8.0
+latest_version: 1.9.1
 name: "dasel"
 releases_feed: "https://github.com/TomWright/dasel/releases.atom"
 tags:
@@ -24,6 +24,40 @@ tags:
   - go 
 url: "https://github.com/TomWright/dasel"
 versions:
+  "1.9.1":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "dasel_linux_amd64"
+          target: "dasel"
+      binary_type: "binary"
+      url: "https://github.com/TomWright/dasel/releases/download/v1.9.1/dasel_linux_amd64"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "dasel_macos_amd64"
+          target: "dasel"
+      binary_type: "binary"
+      url: "https://github.com/TomWright/dasel/releases/download/v1.9.1/dasel_macos_amd64"
+  "1.9.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "dasel_linux_amd64"
+          target: "dasel"
+      binary_type: "binary"
+      url: "https://github.com/TomWright/dasel/releases/download/v1.9.0/dasel_linux_amd64"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "dasel_macos_amd64"
+          target: "dasel"
+      binary_type: "binary"
+      url: "https://github.com/TomWright/dasel/releases/download/v1.9.0/dasel_macos_amd64"
   "1.8.0":
     linux:
       post_install:
