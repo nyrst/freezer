@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/zig.yaml"
-latest_version: 0.7.0
+latest_version: 0.7.1
 name: "zig"
 releases_feed: "https://github.com/ziglang/zig/releases.atom"
 tags:
@@ -7,6 +7,23 @@ tags:
   - zig
 url: "https://github.com/ziglang/zig"
 versions:
+  "0.7.1":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "zig-linux-x86_64-0.7.1/zig"
+          target: "zig"
+      binary_type: "tar"
+      url: "https://github.com/ziglang/zig/releases/download/0.7.1/zig-linux-x86_64-0.7.1.tar.xz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "zig-macos-x86_64-0.7.1/zig"
+          target: "zig"
+      binary_type: "tar"
+      url: "https://github.com/ziglang/zig/releases/download/0.7.1/zig-linux-x86_64-0.7.1.tar.xz"
   "0.7.0":
     linux:
       post_install:
