@@ -133,6 +133,23 @@ versions:
           target: "npx"
       binary_type: "tar"
       url: "https://nodejs.org/dist/v15.0.0/node-v15.0.0-linux-x64.tar.xz"
+  "14.15.3":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "node-v14.15.3-linux-x64/bin/node"
+          target: "node"
+        - 
+          type: "symlink"
+          source: "node-v14.15.3-linux-x64/bin/npm"
+          target: "npm"
+        - 
+          type: "symlink"
+          source: "node-v14.15.3-linux-x64/bin/npx"
+          target: "npx"
+      binary_type: "tar"
+      url: "https://nodejs.org/dist/v14.15.3/node-v14.15.3-linux-x64.tar.xz"
   "14.15.2":
     linux:
       post_install:
