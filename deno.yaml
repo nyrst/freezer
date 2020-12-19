@@ -3,9 +3,10 @@ latest_version: 1.6.1
 name: "deno"
 releases_feed: "https://github.com/denoland/deno/releases.atom"
 tags:
-  - rust
-  - ls
-  - command-line
+  - deno
+  - typescript
+  - javascript
+  - rust 
 url: "https://github.com/denoland/deno/"
 versions:
   "1.6.1":
