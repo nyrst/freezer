@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/asciidoctor-revealjs.yaml"
-latest_version: 4.0.1
+latest_version: 4.1.0
 name: "asciidoctor-reveal.js"
 releases_feed: "https://github.com/asciidoctor/asciidoctor-reveal.js/releases.atom"
 tags:
@@ -11,6 +11,23 @@ tags:
   - presentations
 url: "https://github.com/asciidoctor/asciidoctor-reveal.js"
 versions:
+  "4.1.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "asciidoctor-revealjs-linux"
+          target: "asciidoctor-revealjs"
+      binary_type: "binary"
+      url: "https://github.com/asciidoctor/asciidoctor-reveal.js/releases/download/v4.1.0/asciidoctor-revealjs-linux"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "asciidoctor-revealjs-macos"
+          target: "asciidoctor-revealjs"
+      binary_type: "binary"
+      url: "https://github.com/asciidoctor/asciidoctor-reveal.js/releases/download/v4.1.0/asciidoctor-revealjs-macos"
   "4.0.1":
     linux:
       post_install:
