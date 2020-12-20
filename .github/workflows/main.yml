@@ -31,7 +31,7 @@ jobs:
 
       # Runs brrr action
       - name: Run a multi-line script
-        uses: nyrst/brrr-action@master
+        uses: nyrst/brrr-action@main
         with:
           command: "freezer generate"
 
