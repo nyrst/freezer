@@ -33,6 +33,5 @@ jobs:
       - name: Run brrr
         uses: nyrst/brrr-action@main
         with:
-          command: freezer
-          args: generate
+          args: freezer generate
 
