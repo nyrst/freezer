@@ -1,0 +1,65 @@
+brrr: "https://nyrst.github.io/freezer/scala.yaml"
+latest_version: 2.13.4
+name: "exa"
+releases_feed: "https://github.com/scala/scala/releases.atom"
+tags:
+  - scala
+  - scala-compiler
+  - scala-programming-language
+  - scala-library
+  - jvm-languages
+  - functional-programming
+  - object-oriented-programming 
+url: "https://github.com/scala/scala"
+versions:
+  "2.13.4":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "scala-2.13.4/bin/fsc"
+          target: "fsc"
+        - 
+          type: "symlink"
+          source: "scala-2.13.4/bin/scala"
+          target: "scala"
+        - 
+          type: "symlink"
+          source: "scala-2.13.4/bin/scalac"
+          target: "scalac"
+        - 
+          type: "symlink"
+          source: "scala-2.13.4/bin/scaladoc"
+          target: "scaladoc"
+        - 
+          type: "symlink"
+          source: "scala-2.13.4/bin/scalap"
+          target: "scalap"
+      binary_type: "tar"
+      url: "https://downloads.lightbend.com/scala/2.13.4/scala-2.13.4.tgz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "scala-2.13.4/bin/fsc"
+          target: "fsc"
+        - 
+          type: "symlink"
+          source: "scala-2.13.4/bin/scala"
+          target: "scala"
+        - 
+          type: "symlink"
+          source: "scala-2.13.4/bin/scalac"
+          target: "scalac"
+        - 
+          type: "symlink"
+          source: "scala-2.13.4/bin/scaladoc"
+          target: "scaladoc"
+        - 
+          type: "symlink"
+          source: "scala-2.13.4/bin/scalap"
+          target: "scalap"
+      binary_type: "tar"
+      url: "https://downloads.lightbend.com/scala/2.13.4/scala-2.13.4.tgz"
+      binary_type: "tar"
+      url: "https://downloads.lightbend.com/scala/2.13.4/scala-2.13.4.tgz"
