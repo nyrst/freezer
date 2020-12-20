@@ -30,8 +30,8 @@ jobs:
         run: echo Hello, world!
 
       # Runs brrr action
-      - name: Run a multi-line script
+      - name: Run brrr
         uses: nyrst/brrr-action@main
         with:
-          command: "freezer generate"
+          command: freezer generate
 
