@@ -1,0 +1,30 @@
+brrr: "https://nyrst.github.io/freezer/hyperfine.yaml"
+latest_version: 1.11.0
+name: "hyperfine"
+releases_feed: "https://github.com/sharkdp/hyperfine/releases.atom"
+tags:
+  - command-line
+  - tool
+  - benchmark
+  - rust
+  - cli
+  - terminal 
+url: "https://github.com/sharkdp/hyperfine"
+versions:
+  "1.11.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "hyperfine-v1.11.0-x86_64-unknown-linux-gnu/hyperfine"
+          target: "hyperfine"
+      binary_type: "tar"
+      url: "https://github.com/sharkdp/hyperfine/releases/download/v1.11.0/hyperfine-v1.11.0-x86_64-unknown-linux-gnu.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "hyperfine-v1.11.0-x86_64-apple-darwin/hyperfine"
+          target: "hyperfine"
+      binary_type: "tar"
+      url: "https://github.com/sharkdp/hyperfine/releases/download/v1.11.0/hyperfine-v1.11.0-x86_64-apple-darwin.tar.gz"
