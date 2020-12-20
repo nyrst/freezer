@@ -1,0 +1,27 @@
+brrr: "https://nyrst.github.io/freezer/dog.yaml"
+latest_version: 0.1.0
+name: "dog"
+releases_feed: "https://github.com/ogham/dog/releases.atom"
+tags:
+  - command-line
+  - dns
+  - client 
+url: "https://github.com/ogham/dog"
+versions:
+  "0.1.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "bin/dog"
+          target: "dog"
+      binary_type: "zip"
+      url: "https://github.com/ogham/dog/releases/download/v0.1.0/dog-v0.1.0-x86_64-unknown-linux-gnu.zip"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "bin/dog"
+          target: "dog"
+      binary_type: "zip"
+      url: "https://github.com/ogham/dog/releases/download/v0.1.0/dog-v0.1.0-x86_64-apple-darwin.zip"
