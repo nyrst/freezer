@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/lf.yaml"
-latest_version: r17
+latest_version: r18
 name: "lf"
 releases_feed: "https://github.com/gokcehan/lf/releases.atom"
 tags:
@@ -7,6 +7,23 @@ tags:
   - file-manager
 url: "https://github.com/gokcehan/lf"
 versions:
+  "r18":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "lf"
+          target: "lf"
+      binary_type: "tar"
+      url: "https://github.com/gokcehan/lf/releases/download/r18/lf-linux-amd64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "lf"
+          target: "lf"
+      binary_type: "tar"
+      url: "https://github.com/gokcehan/lf/releases/download/r18/lf-darwin-amd64.tar.gz"
   "r17":
     linux:
       post_install:
