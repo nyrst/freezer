@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/deno.yaml"
-latest_version: 1.6.1
+latest_version: 1.6.2
 name: "deno"
 releases_feed: "https://github.com/denoland/deno/releases.atom"
 tags:
@@ -9,6 +9,31 @@ tags:
   - rust 
 url: "https://github.com/denoland/deno/"
 versions:
+  "1.6.2":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "deno"
+          target: "deno"
+      binary_type: "zip"
+      url: "https://github.com/denoland/deno/releases/download/v1.6.2/deno-x86_64-unknown-linux-gnu.zip"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "deno"
+          target: "deno"
+      binary_type: "zip"
+      url: "https://github.com/denoland/deno/releases/download/v1.6.2/deno-x86_64-apple-darwin.zip"
+    macosarm:
+      post_install:
+        - 
+          type: "symlink"
+          source: "deno"
+          target: "deno"
+      binary_type: "zip"
+      url: "https://github.com/denoland/deno/releases/download/v1.6.2/deno-aarch64-apple-darwin.zip"
   "1.6.1":
     linux:
       post_install:
