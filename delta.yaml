@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/delta.yaml"
-latest_version: 0.4.4
+latest_version: 0.4.5
 name: "delta"
 releases_feed: "https://github.com/dandavison/delta/releases.atom"
 tags:
@@ -13,6 +13,23 @@ tags:
   - syntax-highlighter 
 url: "https://github.com/dandavison/delta"
 versions:
+  "0.4.5":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "delta-0.4.5-x86_64-unknown-linux-gnu/delta"
+          target: "delta"
+      binary_type: "tar"
+      url: "https://github.com/dandavison/delta/releases/download/0.4.5/delta-0.4.5-x86_64-unknown-linux-gnu.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "delta-0.4.5-x86_64-apple-darwin/delta"
+          target: "delta"
+      binary_type: "tar"
+      url: "https://github.com/dandavison/delta/releases/download/0.4.5/delta-0.4.5-x86_64-apple-darwin.tar.gz"
   "0.4.4":
     linux:
       post_install:
