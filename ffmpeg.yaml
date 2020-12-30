@@ -1,4 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/ffmpeg.yaml"
+brrr_version: 0.6765.89
 latest_version: 4.3.1
 name: "ffmpeg"
 releases_feed: "https://git.ffmpeg.org/gitweb/ffmpeg.git/rss?opt=--no-merges"
@@ -20,3 +21,20 @@ versions:
       binary_type: "tar"
       hash_md5: "ee235393ec7778279144ee6cbdd9eb64"
       url: "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz"
+    macos:
+      -
+        post_install:
+          - 
+            type: "symlink"
+            source: "ffmpeg"
+            target: "ffmpeg"
+        binary_type: "zip"
+        url: "https://evermeet.cx/ffmpeg/ffmpeg-4.3.1.zip"
+      -
+        post_install:
+          - 
+            type: "symlink"
+            source: "ffprobe"
+            target: "ffprobe"
+        binary_type: "zip"
+        url: "https://evermeet.cx/ffmpeg/ffprobe-4.3.1.zip"
