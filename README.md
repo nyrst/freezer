@@ -41,12 +41,13 @@ versions:
 A package is a yaml file with the following properties:
 
 - `brrr` (`String`, mandadory): the url of the definition file.
+- `brrr_version` (`String`, optional): the minimal brrr version to use (compatible with latest if not present). 
 - `latest_version` (`String`, mandatory): the latest available version (used later in `versions`).
 - `name` (`String`, mandatory): the name of the package.
 - `releases_feed` (`String`, optional): the rss feed to get new versions information. Useful to update the content of this repository.
 - `tags` (`Array(String)`, mandatory): an array of tags related to the project.
 - `url` (`String`, mandatory): the url of the package repository.
-- `versions` (`Hash(version: String, Hash(arch: String, version: Binary))`, mandatory): a map with versions as keys, and as value a map with architecture (`linux`, `macos`) as keys, and a Binary as value, see below.
+- `versions` (`Hash(version: String, Hash(arch: String, version: Binary | Array(Binary)))`, mandatory): a map with versions as keys, and as value a map with architecture (`linux`, `macos`) as keys, and a Binary as value, see below.
 
 A Binary has the following properties:
 
