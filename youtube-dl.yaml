@@ -1,330 +1,66 @@
 brrr: "https://nyrst.github.io/freezer/youtube-dl.yaml"
-latest_version: 2020.12.29
+brrr_version: 0.10946.144
+latest_version: 2020.12.31
 name: "youtube-dl"
 releases_feed: "https://github.com/ytdl-org/youtube-dl/releases.atom"
 tags: []
 url: "https://github.com/ytdl-org/youtube-dl"
+templates:
+  v1:
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "youtube-dl"
+          target: "youtube-dl"
+      binary_type: "binary"
+      url: "https://github.com/ytdl-org/youtube-dl/releases/download/brrr_package_version/youtube-dl"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "youtube-dl"
+          target: "youtube-dl"
+      binary_type: "binary"
+      url: "https://github.com/ytdl-org/youtube-dl/releases/download/brrr_package_version/youtube-dl"
 versions:
+  "2020.12.31":
+    use_template: "v1"
   "2020.12.29":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.29/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.29/youtube-dl"
+    use_template: "v1"
   "2020.12.26":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.26/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.26/youtube-dl"
+    use_template: "v1"
   "2020.12.22":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.22/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.22/youtube-dl"
+    use_template: "v1"
   "2020.12.14":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.14/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.14/youtube-dl"
+    use_template: "v1"
   "2020.12.12":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.12/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.12/youtube-dl"
+    use_template: "v1"
   "2020.12.09":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.09/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.09/youtube-dl"
+    use_template: "v1"
   "2020.12.07":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.07/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.07/youtube-dl"
+    use_template: "v1"
   "2020.12.05":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.05/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.05/youtube-dl"
+    use_template: "v1"
   "2020.12.02":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.02/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.12.02/youtube-dl"
+    use_template: "v1"
   "2020.11.29":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.29/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.29/youtube-dl"
+    use_template: "v1"
   "2020.11.26":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.26/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.26/youtube-dl"
+    use_template: "v1"
   "2020.11.24":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.24/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.24/youtube-dl"
+    use_template: "v1"
   "2020.11.21.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.21.1/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.21.1/youtube-dl"
+    use_template: "v1"
   "2020.11.21":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.21/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.21/youtube-dl"
+    use_template: "v1"
   "2020.11.19":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.19/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.19/youtube-dl"
+    use_template: "v1"
   "2020.11.18":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.18/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.18/youtube-dl"
+    use_template: "v1"
   "2020.11.17":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.17/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.17/youtube-dl"
+    use_template: "v1"
   "2020.11.12":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.12/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.12/youtube-dl"
+    use_template: "v1"
   "2020.11.01.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.01.1/youtube-dl"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "youtube-dl"
-          target: "youtube-dl"
-      binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/2020.11.01.1/youtube-dl"
+    use_template: "v1"
