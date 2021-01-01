@@ -1,6 +1,6 @@
 brrr: "https://nyrst.github.io/freezer/scala.yaml"
 latest_version: 2.13.4
-name: "exa"
+name: "scala"
 releases_feed: "https://github.com/scala/scala/releases.atom"
 tags:
   - scala
