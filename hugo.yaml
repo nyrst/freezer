@@ -1,5 +1,6 @@
 brrr: "https://nyrst.github.io/freezer/hugo.yaml"
-latest_version: 0.79.1
+brrr_version: 0.10946.144
+latest_version: 0.80.0
 name: "hugo"
 releases_feed: "https://github.com/gohugoio/hugo/releases.atom"
 tags:
@@ -11,276 +12,56 @@ tags:
   - content-management-system
   - documentation-tool 
 url: "https://github.com/gohugoio/hugo"
+templates:
+  v1:
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "hugo"
+          target: "hugo"
+      binary_type: "tar"
+      url: "https://github.com/gohugoio/hugo/releases/download/vbrrr_package_version/hugo_extended_brrr_package_version_Linux-64bit.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "hugo"
+          target: "hugo"
+      binary_type: "tar"
+      url: "https://github.com/gohugoio/hugo/releases/download/vbrrr_package_version/hugo_extended_brrr_package_version_macOS-64bit.tar.gz"
 versions:
+  "0.80.0":
+    use_template: "v1"
   "0.79.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.79.1/hugo_extended_0.79.1_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.79.1/hugo_extended_0.79.1_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.79.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.79.0/hugo_extended_0.79.0_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.79.0/hugo_extended_0.79.0_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.78.2":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.78.2/hugo_extended_0.78.2_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.78.2/hugo_extended_0.78.2_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.78.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.78.1/hugo_extended_0.78.1_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.78.1/hugo_extended_0.78.1_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.78.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.78.0/hugo_extended_0.78.0_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.78.0/hugo_extended_0.78.0_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.77.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.77.0/hugo_extended_0.77.0_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.77.0/hugo_extended_0.77.0_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.76.5":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.5/hugo_extended_0.76.5_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.5/hugo_extended_0.76.5_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.76.4":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.4/hugo_extended_0.76.4_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.4/hugo_extended_0.76.4_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.76.3":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.3/hugo_extended_0.76.3_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.3/hugo_extended_0.76.3_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.76.2":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.2/hugo_extended_0.76.2_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.2/hugo_extended_0.76.2_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.76.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.1/hugo_extended_0.76.1_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.1/hugo_extended_0.76.1_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.76.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.0/hugo_extended_0.76.0_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.76.0/hugo_extended_0.76.0_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.75.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.75.1/hugo_extended_0.75.1_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.75.1/hugo_extended_0.75.1_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.75.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.75.0/hugo_extended_0.75.0_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.75.0/hugo_extended_0.75.0_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.74.3":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_extended_0.74.3_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_extended_0.74.3_macOS-64bit.tar.gz"
+    use_template: "v1"
   "0.74.2":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.74.2/hugo_extended_0.74.2_Linux-64bit.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "hugo"
-          target: "hugo"
-      binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/v0.74.2/hugo_extended_0.74.2_macOS-64bit.tar.gz"
+    use_template: "v1"
