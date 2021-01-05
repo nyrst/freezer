@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/brrr.yaml"
-latest_version: 0.6765.89
+latest_version: 0.10946.144
 name: "brrr"
 releases_feed: "https://github.com/nyrst/brrr/releases.atom"
 tags:
@@ -9,59 +9,8 @@ tags:
   - linux
   - macos
 url: "https://github.com/nyrst/brrr"
-versions:
-  "0.6765.89":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/0.6765.89/brrr-static.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/0.6765.89/brrr-macos.tar.gz"
-  "0.4181.89":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/0.4181.89/brrr-static.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/0.4181.89/brrr-macos.tar.gz"
-  "0.2584.89":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/0.2584.89/brrr-static.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/0.2584.89/brrr-macos.tar.gz"
-  "0.1597.89":
+templates:
+  v1:
     linux:
       post_install:
         - 
@@ -78,207 +27,55 @@ versions:
           target: "brrr"
       binary_type: "tar"
       url: "https://github.com/nyrst/brrr/releases/download/0.1597.89/brrr-macos.tar.gz"
+  v2:
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "brrr"
+          target: "brrr"
+      binary_type: "tar"
+      url: "https://github.com/nyrst/brrr/releases/download/brrr_package_version/brrr-static.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "brrr"
+          target: "brrr"
+      binary_type: "tar"
+      url: "https://github.com/nyrst/brrr/releases/download/brrr_package_version/brrr-macos.tar.gz"
+versions:
+  "0.10946.144":
+    use_template: "v2"
+  "0.6765.89":
+    use_template: "v2"
+  "0.4181.89":
+    use_template: "v2"
+  "0.2584.89":
+    use_template: "v2"
+  "0.1597.89":
+    use_template: "v1"
   "0.987.89":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.987.89/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.987.89/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.610.89":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.610.89/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.610.89/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.610.55":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.610.55/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.610.55/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.377.55":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.377.55/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.377.55/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.377.34":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.377.34/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.377.34/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.377.21":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.377.21/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.377.21/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.233.21":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.233.21/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.233.21/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.144.21":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.144.21/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.144.21/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.144.13":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.144.13/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.144.13/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.89.8":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.89.8/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.89.8/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.55.5":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.55.5/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.55.5/brrr-macos.tar.gz"
+    use_template: "v1"
   "0.34.5":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.34.5/brrr-linux.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "brrr"
-          target: "brrr"
-      binary_type: "tar"
-      url: "https://github.com/nyrst/brrr/releases/download/v0.34.5/brrr-macos.tar.gz"
+    use_template: "v1"
