@@ -1,5 +1,6 @@
 brrr: "https://nyrst.github.io/freezer/go.yaml"
-latest_version: 1.15.6
+brrr_version: 0.17711.144
+latest_version: 1.15.7
 name: "go"
 releases_feed: "https://blog.golang.org/feed.atom"
 tags:
@@ -7,217 +8,52 @@ tags:
   - language
   - go
 url: "https://golang.org/"
+templates:
+  v1:
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "go/bin/go"
+          target: "go"
+        - 
+          type: "symlink"
+          source: "go/bin/gofmt"
+          target: "gofmt"
+      binary_type: "tar"
+      url: "https://golang.org/dl/go{brrr_package_version}.linux-amd64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "go/bin/go"
+          target: "go"
+        - 
+          type: "symlink"
+          source: "go/bin/gofmt"
+          target: "gofmt"
+      binary_type: "tar"
+      url: "https://golang.org/dl/go{brrr_package_version}.darwin-amd64.tar.gz"
 versions:
+  "1.15.7":
+    use_template: "v1"
   "1.15.6":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.6.linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.6.darwin-amd64.tar.gz"
+    use_template: "v1"
   "1.15.5":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.5.linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.5.darwin-amd64.tar.gz"
+    use_template: "v1"
   "1.15.4":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.4.linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.4.darwin-amd64.tar.gz"
+    use_template: "v1"
   "1.15.3":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.3.darwin-amd64.tar.gz"
+    use_template: "v1"
   "1.15.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.15.darwin-amd64.tar.gz"
+    use_template: "v1"
+  "1.14.14":
+    use_template: "v1"
   "1.14.13":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://dl.google.com/go/go1.14.13.linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.14.13.darwin-amd64.tar.gz"
+    use_template: "v1"
   "1.14.12":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://dl.google.com/go/go1.14.12.linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.14.12.darwin-amd64.tar.gz"
+    use_template: "v1"
   "1.14.11":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://dl.google.com/go/go1.14.11.linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://golang.org/dl/go1.14.11.darwin-amd64.tar.gz"
+    use_template: "v1"
   "1.14.2":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "go/bin/go"
-          target: "go"
-        - 
-          type: "symlink"
-          source: "go/bin/gofmt"
-          target: "gofmt"
-      binary_type: "tar"
-      url: "https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz"
+    use_template: "v1"
