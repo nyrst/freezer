@@ -1,5 +1,6 @@
 brrr: "https://nyrst.github.io/freezer/deno.yaml"
-latest_version: 1.6.3
+brrr_version: 0.17711.144
+latest_version: 1.7.0
 name: "deno"
 releases_feed: "https://github.com/denoland/deno/releases.atom"
 tags:
@@ -8,79 +9,38 @@ tags:
   - javascript
   - rust 
 url: "https://github.com/denoland/deno/"
+templates:
+  v1:
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "deno"
+          target: "deno"
+      binary_type: "zip"
+      url: "https://github.com/denoland/deno/releases/download/v{brrr_package_version}/deno-x86_64-unknown-linux-gnu.zip"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "deno"
+          target: "deno"
+      binary_type: "zip"
+      url: "https://github.com/denoland/deno/releases/download/v{brrr_package_version}/deno-x86_64-apple-darwin.zip"
+    macosarm:
+      post_install:
+        - 
+          type: "symlink"
+          source: "deno"
+          target: "deno"
+      binary_type: "zip"
+      url: "https://github.com/denoland/deno/releases/download/v{brrr_package_version}/deno-aarch64-apple-darwin.zip"
 versions:
+  "1.7.0":
+    use_template: "v1"
   "1.6.3":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "deno"
-          target: "deno"
-      binary_type: "zip"
-      url: "https://github.com/denoland/deno/releases/download/v1.6.3/deno-x86_64-unknown-linux-gnu.zip"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "deno"
-          target: "deno"
-      binary_type: "zip"
-      url: "https://github.com/denoland/deno/releases/download/v1.6.3/deno-x86_64-apple-darwin.zip"
-    macosarm:
-      post_install:
-        - 
-          type: "symlink"
-          source: "deno"
-          target: "deno"
-      binary_type: "zip"
-      url: "https://github.com/denoland/deno/releases/download/v1.6.3/deno-aarch64-apple-darwin.zip"
+    use_template: "v1"
   "1.6.2":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "deno"
-          target: "deno"
-      binary_type: "zip"
-      url: "https://github.com/denoland/deno/releases/download/v1.6.2/deno-x86_64-unknown-linux-gnu.zip"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "deno"
-          target: "deno"
-      binary_type: "zip"
-      url: "https://github.com/denoland/deno/releases/download/v1.6.2/deno-x86_64-apple-darwin.zip"
-    macosarm:
-      post_install:
-        - 
-          type: "symlink"
-          source: "deno"
-          target: "deno"
-      binary_type: "zip"
-      url: "https://github.com/denoland/deno/releases/download/v1.6.2/deno-aarch64-apple-darwin.zip"
+    use_template: "v1"
   "1.6.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "deno"
-          target: "deno"
-      binary_type: "zip"
-      url: "https://github.com/denoland/deno/releases/download/v1.6.1/deno-x86_64-unknown-linux-gnu.zip"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "deno"
-          target: "deno"
-      binary_type: "zip"
-      url: "https://github.com/denoland/deno/releases/download/v1.6.1/deno-x86_64-apple-darwin.zip"
-    macosarm:
-      post_install:
-        - 
-          type: "symlink"
-          source: "deno"
-          target: "deno"
-      binary_type: "zip"
-      url: "https://github.com/denoland/deno/releases/download/v1.6.1/deno-aarch64-apple-darwin.zip"
+    use_template: "v1"
