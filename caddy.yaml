@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/caddy.yaml"
-brrr_version: 0.10946.144
+brrr_version: 0.17711.144
 latest_version: 2.3.0
 name: "caddy"
 releases_feed: "https://github.com/caddyserver/caddy/releases.atom"
@@ -25,7 +25,7 @@ templates:
           source: "caddy"
           target: "caddy"
       binary_type: "tar"
-      url: "https://github.com/caddyserver/caddy/releases/download/vbrrr_package_version/caddy_brrr_package_version_linux_amd64.tar.gz"
+      url: "https://github.com/caddyserver/caddy/releases/download/v{brrr_package_version}/caddy_{brrr_package_version}_linux_amd64.tar.gz"
     macos:
       post_install:
         - 
@@ -33,7 +33,7 @@ templates:
           source: "caddy"
           target: "caddy"
       binary_type: "tar"
-      url: "https://github.com/caddyserver/caddy/releases/download/vbrrr_package_version/caddy_brrr_package_version_mac_amd64.tar.gz"
+      url: "https://github.com/caddyserver/caddy/releases/download/v{brrr_package_version}/caddy_{brrr_package_version}_mac_amd64.tar.gz"
 versions:
   "2.3.0":
     use_template: "v1"

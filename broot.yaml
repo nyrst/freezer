@@ -1,4 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/broot.yaml"
+brrr_version: 0.17711.144
 latest_version: 1.2.0
 name: "broot"
 releases_feed: "https://github.com/Canop/broot/releases.atom"
@@ -20,7 +21,7 @@ templates:
           source: "build/x86_64-linux/broot"
           target: "br"
       binary_type: "zip"
-      url: "https://github.com/Canop/broot/releases/download/vbrrr_package_version/broot_brrr_package_version.zip"
+      url: "https://github.com/Canop/broot/releases/download/v{brrr_package_version}/broot_{brrr_package_version}.zip"
   v2:
     linux:
       post_install:
@@ -32,7 +33,7 @@ templates:
           type: "run"
           command: "broot --install"
       binary_type: "zip"
-      url: "https://github.com/Canop/broot/releases/download/vbrrr_package_version/broot_brrr_package_version.zip"
+      url: "https://github.com/Canop/broot/releases/download/v{brrr_package_version}/broot_{brrr_package_version}.zip"
 versions:
   "1.2.0":
     use_template: "v2"

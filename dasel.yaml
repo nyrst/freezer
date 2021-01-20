@@ -1,4 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/dasel.yaml"
+brrr_version: 0.17711.144
 latest_version: 1.12.2
 name: "dasel"
 releases_feed: "https://github.com/TomWright/dasel/releases.atom"
@@ -32,7 +33,7 @@ templates:
           source: "dasel_linux_amd64"
           target: "dasel"
       binary_type: "binary"
-      url: "https://github.com/TomWright/dasel/releases/download/vbrrr_package_version/dasel_linux_amd64"
+      url: "https://github.com/TomWright/dasel/releases/download/v{brrr_package_version}/dasel_linux_amd64"
     macos:
       post_install:
         - 
@@ -40,7 +41,7 @@ templates:
           source: "dasel_macos_amd64"
           target: "dasel"
       binary_type: "binary"
-      url: "https://github.com/TomWright/dasel/releases/download/vbrrr_package_version/dasel_macos_amd64"
+      url: "https://github.com/TomWright/dasel/releases/download/v{brrr_package_version}/dasel_macos_amd64"
 versions:
   "1.12.2":
     use_template: "v1"

@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/hugo.yaml"
-brrr_version: 0.10946.144
+brrr_version: 0.17711.144
 latest_version: 0.80.0
 name: "hugo"
 releases_feed: "https://github.com/gohugoio/hugo/releases.atom"
@@ -21,7 +21,7 @@ templates:
           source: "hugo"
           target: "hugo"
       binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/vbrrr_package_version/hugo_extended_brrr_package_version_Linux-64bit.tar.gz"
+      url: "https://github.com/gohugoio/hugo/releases/download/v{brrr_package_version}/hugo_extended_{brrr_package_version}_Linux-64bit.tar.gz"
     macos:
       post_install:
         - 
@@ -29,7 +29,7 @@ templates:
           source: "hugo"
           target: "hugo"
       binary_type: "tar"
-      url: "https://github.com/gohugoio/hugo/releases/download/vbrrr_package_version/hugo_extended_brrr_package_version_macOS-64bit.tar.gz"
+      url: "https://github.com/gohugoio/hugo/releases/download/v{brrr_package_version}/hugo_extended_{brrr_package_version}_macOS-64bit.tar.gz"
 versions:
   "0.80.0":
     use_template: "v1"

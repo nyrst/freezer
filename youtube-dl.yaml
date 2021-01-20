@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/freezer/youtube-dl.yaml"
-brrr_version: 0.10946.144
+brrr_version: 0.17711.144
 latest_version: 2021.01.16
 name: "youtube-dl"
 releases_feed: "https://github.com/ytdl-org/youtube-dl/releases.atom"
@@ -14,7 +14,7 @@ templates:
           source: "youtube-dl"
           target: "youtube-dl"
       binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/brrr_package_version/youtube-dl"
+      url: "https://github.com/ytdl-org/youtube-dl/releases/download/{brrr_package_version}/youtube-dl"
     macos:
       post_install:
         - 
@@ -22,7 +22,7 @@ templates:
           source: "youtube-dl"
           target: "youtube-dl"
       binary_type: "binary"
-      url: "https://github.com/ytdl-org/youtube-dl/releases/download/brrr_package_version/youtube-dl"
+      url: "https://github.com/ytdl-org/youtube-dl/releases/download/{brrr_package_version}/youtube-dl"
 versions:
   "2021.01.16":
     use_template: "v1"
