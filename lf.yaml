@@ -1,94 +1,40 @@
 brrr: "https://nyrst.github.io/freezer/lf.yaml"
-latest_version: r18
+brrr_version: 0.17711.144
+latest_version: r19
 name: "lf"
 releases_feed: "https://github.com/gokcehan/lf/releases.atom"
 tags:
   - terminal
   - file-manager
 url: "https://github.com/gokcehan/lf"
+templates:
+  v1:
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "lf"
+          target: "lf"
+      binary_type: "tar"
+      url: "https://github.com/gokcehan/lf/releases/download/{brrr_package_version}/lf-linux-amd64.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "lf"
+          target: "lf"
+      binary_type: "tar"
+      url: "https://github.com/gokcehan/lf/releases/download/{brrr_package_version}/lf-darwin-amd64.tar.gz"
 versions:
+  "r19":
+    use_template: "v1"
   "r18":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "lf"
-          target: "lf"
-      binary_type: "tar"
-      url: "https://github.com/gokcehan/lf/releases/download/r18/lf-linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "lf"
-          target: "lf"
-      binary_type: "tar"
-      url: "https://github.com/gokcehan/lf/releases/download/r18/lf-darwin-amd64.tar.gz"
+    use_template: "v1"
   "r17":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "lf"
-          target: "lf"
-      binary_type: "tar"
-      url: "https://github.com/gokcehan/lf/releases/download/r17/lf-linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "lf"
-          target: "lf"
-      binary_type: "tar"
-      url: "https://github.com/gokcehan/lf/releases/download/r17/lf-darwin-amd64.tar.gz"
+    use_template: "v1"
   "r16":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "lf"
-          target: "lf"
-      binary_type: "tar"
-      url: "https://github.com/gokcehan/lf/releases/download/r16/lf-linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "lf"
-          target: "lf"
-      binary_type: "tar"
-      url: "https://github.com/gokcehan/lf/releases/download/r16/lf-darwin-amd64.tar.gz"
+    use_template: "v1"
   "r15":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "lf"
-          target: "lf"
-      binary_type: "tar"
-      url: "https://github.com/gokcehan/lf/releases/download/r15/lf-linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "lf"
-          target: "lf"
-      binary_type: "tar"
-      url: "https://github.com/gokcehan/lf/releases/download/r15/lf-darwin-amd64.tar.gz"
+    use_template: "v1"
   "r14":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "lf"
-          target: "lf"
-      binary_type: "tar"
-      url: "https://github.com/gokcehan/lf/releases/download/r14/lf-linux-amd64.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "lf"
-          target: "lf"
-      binary_type: "tar"
-      url: "https://github.com/gokcehan/lf/releases/download/r14/lf-darwin-amd64.tar.gz"
+    use_template: "v1"
