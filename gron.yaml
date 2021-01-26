@@ -1,12 +1,13 @@
 brrr: "https://nyrst.github.io/freezer/gron.yaml"
-latest_version: 0.6.0
+brrr_version: 0.17711.144
+latest_version: 0.6.1
 name: "gron"
 releases_feed: "https://github.com/tomnomnom/gron/releases.atom"
 tags:
   - command-line
 url: "https://github.com/tomnomnom/gron"
-versions:
-  "0.6.0":
+templates:
+  v1:
     linux:
       post_install:
         - 
@@ -14,7 +15,7 @@ versions:
           source: "gron"
           target: "gron"
       binary_type: "tar"
-      url: "https://github.com/tomnomnom/gron/releases/download/v0.6.0/gron-linux-amd64-0.6.0.tgz"
+      url: "https://github.com/tomnomnom/gron/releases/download/v{brrr_package_version}/gron-linux-amd64-{brrr_package_version}.tgz"
     macos:
       post_install:
         - 
@@ -22,4 +23,9 @@ versions:
           source: "gron"
           target: "gron"
       binary_type: "tar"
-      url: "https://github.com/tomnomnom/gron/releases/download/v0.6.0/gron-darwin-amd64-0.6.0.tgz"
+      url: "https://github.com/tomnomnom/gron/releases/download/v{brrr_package_version}/gron-darwin-amd64-{brrr_package_version}.tgz"
+versions:
+  "0.6.1":
+    use_template: "v1"
+  "0.6.0":
+    use_template: "v1"
