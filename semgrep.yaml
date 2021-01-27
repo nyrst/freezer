@@ -1,6 +1,6 @@
 brrr: "https://nyrst.github.io/freezer/semgrep.yaml"
 brrr_version: 0.17711.144
-latest_version: 0.38.0
+latest_version: 0.39.1
 name: "semgrep"
 releases_feed: "https://github.com/returntocorp/semgrep/releases.atom"
 tags:
@@ -32,6 +32,8 @@ templates:
       binary_type: "zip"
       url: "https://github.com/returntocorp/semgrep/releases/download/v{brrr_package_version}/semgrep-v{brrr_package_version}-osx.zip"
 versions:
+  "0.39.1":
+    use_template: "v1"
   "0.38.0":
     use_template: "v1"
   "0.37.0":
