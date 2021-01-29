@@ -1,0 +1,38 @@
+brrr: "https://nyrst.github.io/freezer/espanso.yaml"
+latest_version: 0.7.3
+name: "exa"
+releases_feed: "https://github.com/federico-terzi/espanso/releases.atom"
+tags:
+  # - windows
+  - macos
+  - linux
+  - rust
+  - productivity
+  - productivity-tools
+  - espanso
+  - text-expander 
+url: "https://github.com/federico-terzi/espanso"
+versions:
+  "0.7.3":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "espanso"
+          target: "espanso"
+        -
+          type: "echo"
+          message: "Run `espanso start`"
+      binary_type: "tar"
+      url: "https://github.com/federico-terzi/espanso/releases/download/v0.7.3/espanso-linux.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "espanso"
+          target: "espanso"
+        -
+          type: "echo"
+          message: "Run `espanso start`"
+      binary_type: "tar"
+      url: "https://github.com/federico-terzi/espanso/releases/download/v0.7.3/espanso-mac.tar.gz"
