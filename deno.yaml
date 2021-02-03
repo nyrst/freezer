@@ -1,6 +1,6 @@
 brrr: "https://nyrst.github.io/freezer/deno.yaml"
 brrr_version: 0.17711.144
-latest_version: 1.7.0
+latest_version: 1.7.1
 name: "deno"
 releases_feed: "https://github.com/denoland/deno/releases.atom"
 tags:
@@ -36,6 +36,8 @@ templates:
       binary_type: "zip"
       url: "https://github.com/denoland/deno/releases/download/v{brrr_package_version}/deno-aarch64-apple-darwin.zip"
 versions:
+  "1.7.1":
+    use_template: "v1"
   "1.7.0":
     use_template: "v1"
   "1.6.3":
