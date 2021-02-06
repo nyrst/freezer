@@ -1,0 +1,29 @@
+brrr: "https://nyrst.github.io/freezer/hexyl.yaml"
+latest_version: 0.8.0
+name: "exa"
+releases_feed: "https://github.com/sharkdp/hexyl/releases.atom"
+tags:
+  - rust
+  - command-line
+  - tool
+  - binary-data
+  - hexadecimal 
+url: "https://github.com/sharkdp/hexyl"
+versions:
+  "0.8.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "hexyl-v0.8.0-x86_64-unknown-linux-gnu/hexyl"
+          target: "hexyl"
+      binary_type: "tar"
+      url: "https://github.com/sharkdp/hexyl/releases/download/v0.8.0/hexyl-v0.8.0-x86_64-unknown-linux-gnu.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "hexyl-v0.8.0-x86_64-apple-darwin/hexyl"
+          target: "hexyl"
+      binary_type: "tar"
+      url: "https://github.com/sharkdp/hexyl/releases/download/v0.8.0/hexyl-v0.8.0-x86_64-apple-darwin.tar.gz"
