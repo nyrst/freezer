@@ -1,6 +1,6 @@
 brrr: "https://nyrst.github.io/freezer/firefox.yaml"
 brrr_version: 0.17711.144
-latest_version: 84.0.2
+latest_version: 85.0.1
 name: "firefox"
 releases_feed: "https://hg.mozilla.org/releases/mozilla-release/rss-tags"
 tags:
@@ -19,6 +19,10 @@ templates:
       binary_type: "tar"
       url: "https://ftp.mozilla.org/pub/firefox/releases/{brrr_package_version}/linux-x86_64/en-US/firefox-{brrr_package_version}.tar.bz2"
 versions:
+  "85.0.1":
+    use_template: "v1"
+  "85.0":
+    use_template: "v1"
   "84.0.2":
     use_template: "v1"
   "84.0.1":
