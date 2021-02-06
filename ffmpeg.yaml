@@ -5,7 +5,7 @@ name: "ffmpeg"
 releases_feed: "https://git.ffmpeg.org/gitweb/ffmpeg.git/rss?opt=--no-merges"
 tags:
   - video
-url: "https://github.com/ogham/exa"
+url: "https://ffmpeg.org/"
 versions:
   "4.3.1":
     linux:
