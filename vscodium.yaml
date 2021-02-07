@@ -1,5 +1,6 @@
 brrr: "https://nyrst.github.io/freezer/vscodium.yaml"
-latest_version: 1.52.1
+brrr_version: 0.17711.144
+latest_version: 1.53.0
 name: "vscodium"
 releases_feed: "https://github.com/VSCodium/vscodium/releases.atom"
 tags:
@@ -9,76 +10,32 @@ tags:
   - ide
   - editor
 url: "https://github.com/VSCodium/vscodium"
+templates:
+  v1:
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "bin/codium"
+          target: "codium"
+      binary_type: "tar"
+      url: "https://github.com/VSCodium/vscodium/releases/download/{brrr_package_version}/VSCodium-linux-x64-{brrr_package_version}.tar.gz"
 versions:
+  "1.53.0":
+    use_template: "v1"
   "1.52.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "bin/codium"
-          target: "codium"
-      binary_type: "tar"
-      url: "https://github.com/VSCodium/vscodium/releases/download/1.52.1/VSCodium-linux-x64-1.52.1.tar.gz"
+    use_template: "v1"
   "1.52.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "bin/codium"
-          target: "codium"
-      binary_type: "tar"
-      url: "https://github.com/VSCodium/vscodium/releases/download/1.52.0/VSCodium-linux-x64-1.52.0.tar.gz"
+    use_template: "v1"
   "1.51.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "bin/codium"
-          target: "codium"
-      binary_type: "tar"
-      url: "https://github.com/VSCodium/vscodium/releases/download/1.51.1/VSCodium-linux-x64-1.51.1.tar.gz"
+    use_template: "v1"
   "1.51.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "bin/codium"
-          target: "codium"
-      binary_type: "tar"
-      url: "https://github.com/VSCodium/vscodium/releases/download/1.51.0/VSCodium-linux-x64-1.51.0.tar.gz"
+    use_template: "v1"
   "1.50.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "bin/codium"
-          target: "codium"
-      binary_type: "tar"
-      url: "https://github.com/VSCodium/vscodium/releases/download/1.50.1/VSCodium-linux-x64-1.50.1.tar.gz"
+    use_template: "v1"
   "1.50.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "bin/codium"
-          target: "codium"
-      binary_type: "tar"
-      url: "https://github.com/VSCodium/vscodium/releases/download/1.50.0/VSCodium-linux-x64-1.50.0.tar.gz"
+    use_template: "v1"
   "1.49.3":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "bin/codium"
-          target: "codium"
-      binary_type: "tar"
-      url: "https://github.com/VSCodium/vscodium/releases/download/1.49.3/VSCodium-linux-x64-1.49.3.tar.gz"
+    use_template: "v1"
   "1.49.2":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "bin/codium"
-          target: "codium"
-      binary_type: "tar"
-      url: "https://github.com/VSCodium/vscodium/releases/download/1.49.2/VSCodium-linux-x64-1.49.2.tar.gz"
+    use_template: "v1"
