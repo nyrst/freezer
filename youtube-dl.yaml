@@ -1,7 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/youtube-dl.yaml"
-brrr_version: 0.17711.144
-latest_version: 2021.02.04.1
 name: "youtube-dl"
+latest_version: 2021.02.04.1
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/ytdl-org/youtube-dl/releases.atom"
 tags: []
 url: "https://github.com/ytdl-org/youtube-dl"

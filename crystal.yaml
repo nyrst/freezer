@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/crystal.yaml"
-latest_version: 0.36.1
 name: "crystal"
+latest_version: 0.36.1
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/crystal-lang/crystal/releases.atom"
 tags:
   - crystal

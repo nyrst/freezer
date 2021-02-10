@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/micro.yaml"
-latest_version: 2.0.8
 name: "micro"
+latest_version: 2.0.8
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/zyedidia/micro/releases.atom"
 repository: "https://github.com/zyedidia/micro"
 tags:

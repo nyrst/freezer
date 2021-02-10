@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/glow.yaml"
-latest_version: 1.3.0
 name: "glow"
+latest_version: 1.3.0
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/charmbracelet/glow/releases.atom"
 tags:
   - markdown

@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/zoxide.yaml"
-latest_version: 0.5.0
 name: "zoxide"
+latest_version: 0.5.0
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/ajeetdsouza/zoxide/releases.atom"
 tags:
   - z

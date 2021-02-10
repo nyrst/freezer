@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/asciidoctor-revealjs.yaml"
-latest_version: 4.1.0
 name: "asciidoctor-reveal.js"
+latest_version: 4.1.0
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/asciidoctor/asciidoctor-reveal.js/releases.atom"
 tags:
   - asciidoc

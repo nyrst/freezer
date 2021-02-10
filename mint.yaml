@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/mint.yaml"
-latest_version: 0.11.0
 name: "mint"
+latest_version: 0.11.0
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/mint-lang/mint/releases.atom"
 tags:
   - mint-lang

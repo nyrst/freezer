@@ -1,7 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/deno.yaml"
-brrr_version: 0.17711.144
-latest_version: 1.7.2
 name: "deno"
+latest_version: 1.7.2
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/denoland/deno/releases.atom"
 tags:
   - deno

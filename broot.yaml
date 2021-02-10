@@ -1,7 +1,7 @@
-brrr: "https://nyrst.github.io/freezer/broot.yaml"
-brrr_version: 0.17711.144
-latest_version: 1.2.3
+
 name: "broot"
+latest_version: 1.2.3
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/Canop/broot/releases.atom"
 tags:
   - rust

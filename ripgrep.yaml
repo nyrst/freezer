@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/ripgrep.yaml"
-latest_version: 12.1.1
 name: "ripgrep"
+latest_version: 12.1.1
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/BurntSushi/ripgrep/releases.atom"
 tags:
   - ripgrep

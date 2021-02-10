@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/nim.yaml"
-latest_version: 1.4.2
 name: "nim"
+latest_version: 1.4.2
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/nim-lang/Nim/releases.atom"
 tags:
   - language

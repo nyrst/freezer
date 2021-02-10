@@ -1,7 +1,7 @@
-brrr: "https://nyrst.github.io/freezer/lf.yaml"
-brrr_version: 0.17711.144
-latest_version: r20
 name: "lf"
+latest_version: r20
+brrr_version: 0.17711.144
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/gokcehan/lf/releases.atom"
 tags:
   - terminal

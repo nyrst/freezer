@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/exa.yaml"
-latest_version: 0.9.0
 name: "exa"
+latest_version: 0.9.0
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/ogham/exa/releases.atom"
 tags:
   - rust

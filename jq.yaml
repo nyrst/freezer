@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/jq.yaml"
-latest_version: 1.6
 name: "jq"
+latest_version: 1.6
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/stedolan/jq/releases.atom"
 tags:
   - command-line

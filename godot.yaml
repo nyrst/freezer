@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/godot.yaml"
-latest_version: 3.2.3
 name: "godot"
+latest_version: 3.2.3
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/godotengine/godot/releases.atom"
 tags:
   - game-engine

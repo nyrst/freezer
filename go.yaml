@@ -1,7 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/go.yaml"
-brrr_version: 0.17711.144
-latest_version: 1.15.8
 name: "go"
+latest_version: 1.15.8
+brrr_version: 0.28657.144
 releases_feed: "https://blog.golang.org/feed.atom"
 tags:
   - programming-language

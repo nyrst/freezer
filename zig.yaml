@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/zig.yaml"
-latest_version: 0.7.1
 name: "zig"
+latest_version: 0.7.1
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/ziglang/zig/releases.atom"
 tags:
   - compiler

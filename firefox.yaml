@@ -1,7 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/firefox.yaml"
-brrr_version: 0.17711.144
-latest_version: 85.0.2
 name: "firefox"
+latest_version: 85.0.2
+brrr_version: 0.28657.144
 releases_feed: "https://hg.mozilla.org/releases/mozilla-release/rss-tags"
 tags:
   - browser

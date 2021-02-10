@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/espanso.yaml"
-latest_version: 0.7.3
 name: "espanso"
+latest_version: 0.7.3
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/federico-terzi/espanso/releases.atom"
 tags:
   # - windows

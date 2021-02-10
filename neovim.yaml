@@ -1,6 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/neovim.yaml"
-latest_version: 0.4.4
 name: "neovim"
+latest_version: 0.4.4
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/neovim/neovim/releases.atom"
 tags:
   - neovim

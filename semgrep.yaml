@@ -1,7 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/semgrep.yaml"
-brrr_version: 0.17711.144
-latest_version: 0.39.1
 name: "semgrep"
+latest_version: 0.39.1
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/returntocorp/semgrep/releases.atom"
 tags:
   - static-analysis

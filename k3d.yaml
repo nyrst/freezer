@@ -1,7 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/k3d.yaml"
-brrr_version: 0.17711.144
-latest_version: 4.2.0
 name: "k3d"
+latest_version: 4.2.0
+brrr_version: 0.28657.144
 releases_feed: "https://github.com/rancher/k3d/releases.atom"
 tags:
   - kubernetes

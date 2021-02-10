@@ -1,7 +1,6 @@
-brrr: "https://nyrst.github.io/freezer/ffmpeg.yaml"
-brrr_version: 0.6765.89
-latest_version: 4.3.1
 name: "ffmpeg"
+latest_version: 4.3.1
+brrr_version: 0.28657.144
 releases_feed: "https://git.ffmpeg.org/gitweb/ffmpeg.git/rss?opt=--no-merges"
 tags:
   - video
