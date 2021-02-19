@@ -1,5 +1,5 @@
 name: "hugo"
-latest_version: 0.80.0
+latest_version: 0.81.0
 brrr_version: 0.28657.144
 releases_feed: "https://github.com/gohugoio/hugo/releases.atom"
 tags:
@@ -30,6 +30,8 @@ templates:
       binary_type: "tar"
       url: "https://github.com/gohugoio/hugo/releases/download/v{brrr_package_version}/hugo_extended_{brrr_package_version}_macOS-64bit.tar.gz"
 versions:
+  "0.81.0":
+    use_template: "v1"
   "0.80.0":
     use_template: "v1"
   "0.79.1":
