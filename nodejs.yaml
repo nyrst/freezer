@@ -1,5 +1,5 @@
 name: "nodejs"
-latest_version: 15.9.0
+latest_version: 15.10.0
 brrr_version: 0.28657.144
 releases_feed: "https://github.com/nodejs/node/releases.atom"
 tags:
@@ -14,6 +14,23 @@ tags:
   # - windows 
 url: "https://github.com/nodejs/node"
 versions:
+  "15.10.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "node-v15.10.0-linux-x64/bin/node"
+          target: "node"
+        - 
+          type: "symlink"
+          source: "node-v15.10.0-linux-x64/bin/npm"
+          target: "npm"
+        - 
+          type: "symlink"
+          source: "node-v15.10.0-linux-x64/bin/npx"
+          target: "npx"
+      binary_type: "tar"
+      url: "https://nodejs.org/dist/v15.10.0/node-v15.10.0-linux-x64.tar.xz"
   "15.9.0":
     linux:
       post_install:
@@ -235,6 +252,23 @@ versions:
           target: "npx"
       binary_type: "tar"
       url: "https://nodejs.org/dist/v15.0.0/node-v15.0.0-linux-x64.tar.xz"
+  "14.16.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "node-v14.16.0-linux-x64/bin/node"
+          target: "node"
+        - 
+          type: "symlink"
+          source: "node-v14.16.0-linux-x64/bin/npm"
+          target: "npm"
+        - 
+          type: "symlink"
+          source: "node-v14.16.0-linux-x64/bin/npx"
+          target: "npx"
+      binary_type: "tar"
+      url: "https://nodejs.org/dist/v14.16.0/node-v14.16.0-linux-x64.tar.xz"
   "14.15.5":
     linux:
       post_install:
