@@ -1,5 +1,5 @@
 name: "youtube-dl"
-latest_version: 2021.02.10
+latest_version: 2021.02.22
 brrr_version: 0.28657.144
 releases_feed: "https://github.com/ytdl-org/youtube-dl/releases.atom"
 tags: []
@@ -23,6 +23,8 @@ templates:
       binary_type: "binary"
       url: "https://github.com/ytdl-org/youtube-dl/releases/download/{brrr_package_version}/youtube-dl"
 versions:
+  "2021.02.22":
+    use_template: "v1"
   "2021.02.10":
     use_template: "v1"
   "2021.02.04.1":
