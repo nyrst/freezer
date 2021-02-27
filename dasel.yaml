@@ -1,5 +1,5 @@
 name: "dasel"
-latest_version: 1.13.1
+latest_version: 1.13.2
 brrr_version: 0.28657.144
 releases_feed: "https://github.com/TomWright/dasel/releases.atom"
 tags:
@@ -42,6 +42,8 @@ templates:
       binary_type: "binary"
       url: "https://github.com/TomWright/dasel/releases/download/v{brrr_package_version}/dasel_macos_amd64"
 versions:
+  "1.13.2":
+    use_template: "v1"
   "1.13.1":
     use_template: "v1"
   "1.13.0":
