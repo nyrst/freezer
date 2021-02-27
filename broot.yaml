@@ -1,6 +1,6 @@
 
 name: "broot"
-latest_version: 1.2.4
+latest_version: 1.2.6
 brrr_version: 0.28657.144
 releases_feed: "https://github.com/Canop/broot/releases.atom"
 tags:
@@ -35,6 +35,10 @@ templates:
       binary_type: "zip"
       url: "https://github.com/Canop/broot/releases/download/v{brrr_package_version}/broot_{brrr_package_version}.zip"
 versions:
+  "1.2.6":
+    use_template: "v2"
+  "1.2.5":
+    use_template: "v2"
   "1.2.4":
     use_template: "v2"
   "1.2.3":
