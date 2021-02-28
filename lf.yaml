@@ -1,5 +1,5 @@
 name: "lf"
-latest_version: r20
+latest_version: r21
 brrr_version: 0.17711.144
 brrr_version: 0.28657.144
 releases_feed: "https://github.com/gokcehan/lf/releases.atom"
@@ -26,6 +26,8 @@ templates:
       binary_type: "tar"
       url: "https://github.com/gokcehan/lf/releases/download/{brrr_package_version}/lf-darwin-amd64.tar.gz"
 versions:
+  "r21":
+    use_template: "v1"
   "r20":
     use_template: "v1"
   "r19":
