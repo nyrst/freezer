@@ -1,6 +1,6 @@
 name: "gitui"
-latest_version: 0.11.0
-brrr_version: 0.28657.144
+latest_version: 0.12.0
+brrr_version: 0.46368.144
 releases_feed: "https://github.com/extrawurst/gitui/releases.atom"
 tags:
   - rust
@@ -10,140 +10,40 @@ tags:
   - command-line-tool
   - command-line-interface
 url: "https://github.com/extrawurst/gitui"
+templates:
+  v1:
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "gitui"
+          target: "gitui"
+      binary_type: "tar"
+      url: "https://github.com/extrawurst/gitui/releases/download/v{brrr_package_version}/gitui-linux-musl.tar.gz"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "gitui"
+          target: "gitui"
+      binary_type: "tar"
+      url: "https://github.com/extrawurst/gitui/releases/download/v{brrr_package_version}/gitui-mac.tar.gz"
 versions:
+  "0.12.0":
+    use_template: "v1"
   "0.11.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.11.0/gitui-linux-musl.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.11.0/gitui-mac.tar.gz"
+    use_template: "v1"
   "0.10.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.10.1/gitui-linux-musl.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.10.1/gitui-mac.tar.gz"
+    use_template: "v1"
   "0.10.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.10.0/gitui-linux-musl.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.10.0/gitui-mac.tar.gz"
+    use_template: "v1"
   "0.9.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.9.1/gitui-linux-musl.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.9.1/gitui-mac.tar.gz"
+    use_template: "v1"
   "0.9.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.9.0/gitui-linux-musl.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.9.0/gitui-mac.tar.gz"
+    use_template: "v1"
   "0.8.1":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.8.1/gitui-linux-musl.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.8.1/gitui-mac.tar.gz"
+    use_template: "v1"
   "0.8.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.8.0/gitui-linux-musl.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.8.0/gitui-mac.tar.gz"
+    use_template: "v1"
   "0.7.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.7.0/gitui-linux-musl.tar.gz"
-    macos:
-      post_install:
-        - 
-          type: "symlink"
-          source: "gitui"
-          target: "gitui"
-      binary_type: "tar"
-      url: "https://github.com/extrawurst/gitui/releases/download/v0.7.0/gitui-mac.tar.gz"
+    use_template: "v1"
