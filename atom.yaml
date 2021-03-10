@@ -1,6 +1,6 @@
 name: "atom"
-latest_version: 1.54.0
-brrr_version: 0.28657.144
+latest_version: 1.55.0
+brrr_version: 0.46368.144
 releases_feed: "https://github.com/atom/atom/releases.atom"
 tags:
   - atom
@@ -11,94 +11,36 @@ tags:
   - linux
   # - macos 
 url: "https://github.com/atom/atom/"
+templates:
+  v1:
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "atom-{brrr_package_version}-amd64/atom"
+          target: "atom"
+      binary_type: "tar"
+      url: "https://github.com/atom/atom/releases/download/v{brrr_package_version}/atom-amd64.tar.gz"
 versions:
+  "1.55.0":
+    use_template: "v1"
   "1.54.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "atom-1.54.0-amd64/atom"
-          target: "atom"
-      binary_type: "tar"
-      url: "https://github.com/atom/atom/releases/download/v1.54.0/atom-amd64.tar.gz"
+    use_template: "v1"
   "1.53.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "atom-1.53.0-amd64/atom"
-          target: "atom"
-      binary_type: "tar"
-      url: "https://github.com/atom/atom/releases/download/v1.53.0/atom-amd64.tar.gz"
+    use_template: "v1"
   "1.52.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "atom-1.52.0-amd64/atom"
-          target: "atom"
-      binary_type: "tar"
-      url: "https://github.com/atom/atom/releases/download/v1.52.0/atom-amd64.tar.gz"
+    use_template: "v1"
   "1.51.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "atom-1.51.0-amd64/atom"
-          target: "atom"
-      binary_type: "tar"
-      url: "https://github.com/atom/atom/releases/download/v1.51.0/atom-amd64.tar.gz"
+    use_template: "v1"
   "1.50.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "atom-1.50.0-amd64/atom"
-          target: "atom"
-      binary_type: "tar"
-      url: "https://github.com/atom/atom/releases/download/v1.50.0/atom-amd64.tar.gz"
+    use_template: "v1"
   "1.49.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "atom-1.49.0-amd64/atom"
-          target: "atom"
-      binary_type: "tar"
-      url: "https://github.com/atom/atom/releases/download/v1.49.0/atom-amd64.tar.gz"
+    use_template: "v1"
   "1.48.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "atom-1.48.0-amd64/atom"
-          target: "atom"
-      binary_type: "tar"
-      url: "https://github.com/atom/atom/releases/download/v1.48.0/atom-amd64.tar.gz"
+    use_template: "v1"
   "1.47.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "atom-1.47.0-amd64/atom"
-          target: "atom"
-      binary_type: "tar"
-      url: "https://github.com/atom/atom/releases/download/v1.47.0/atom-amd64.tar.gz"
+    use_template: "v1"
   "1.46.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "atom-1.46.0-amd64/atom"
-          target: "atom"
-      binary_type: "tar"
-      url: "https://github.com/atom/atom/releases/download/v1.46.0/atom-amd64.tar.gz"
+    use_template: "v1"
   "1.45.0":
-    linux:
-      post_install:
-        - 
-          type: "symlink"
-          source: "atom-1.45.0-amd64/atom"
-          target: "atom"
-      binary_type: "tar"
-      url: "https://github.com/atom/atom/releases/download/v1.45.0/atom-amd64.tar.gz"
+    use_template: "v1"
