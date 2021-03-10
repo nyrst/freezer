@@ -1,5 +1,5 @@
 name: "go"
-latest_version: 1.16
+latest_version: 1.16.1
 brrr_version: 0.28657.144
 releases_feed: "https://blog.golang.org/feed.atom"
 tags:
@@ -34,7 +34,11 @@ templates:
       binary_type: "tar"
       url: "https://golang.org/dl/go{brrr_package_version}.darwin-amd64.tar.gz"
 versions:
+  "1.16.1":
+    use_template: "v1"
   "1.16":
+    use_template: "v1"
+  "1.15.9":
     use_template: "v1"
   "1.15.8":
     use_template: "v1"
