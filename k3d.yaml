@@ -1,5 +1,5 @@
 name: "k3d"
-latest_version: 4.2.0
+latest_version: 4.3.0
 brrr_version: 0.28657.144
 releases_feed: "https://github.com/rancher/k3d/releases.atom"
 tags:
@@ -30,6 +30,8 @@ templates:
       binary_type: "binary"
       url: "https://github.com/rancher/k3d/releases/download/v{brrr_package_version}/k3d-darwin-amd64"
 versions:
+  "4.3.0":
+    use_template: "v1"
   "4.2.0":
     use_template: "v1"
   "4.1.1":
