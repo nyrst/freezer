@@ -1,5 +1,5 @@
 name: "semgrep"
-latest_version: 0.41.1
+latest_version: 0.42.0
 brrr_version: 0.28657.144
 releases_feed: "https://github.com/returntocorp/semgrep/releases.atom"
 tags:
@@ -31,6 +31,8 @@ templates:
       binary_type: "zip"
       url: "https://github.com/returntocorp/semgrep/releases/download/v{brrr_package_version}/semgrep-v{brrr_package_version}-osx.zip"
 versions:
+  "0.42.0":
+    use_template: "v1"
   "0.41.1":
     use_template: "v1"
   "0.41.0":
