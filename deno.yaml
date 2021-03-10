@@ -1,5 +1,5 @@
 name: "deno"
-latest_version: 1.8.0
+latest_version: 1.8.1
 brrr_version: 0.28657.144
 releases_feed: "https://github.com/denoland/deno/releases.atom"
 tags:
@@ -35,6 +35,8 @@ templates:
       binary_type: "zip"
       url: "https://github.com/denoland/deno/releases/download/v{brrr_package_version}/deno-aarch64-apple-darwin.zip"
 versions:
+  "1.8.1":
+    use_template: "v1"
   "1.8.0":
     use_template: "v1"
   "1.7.5":
